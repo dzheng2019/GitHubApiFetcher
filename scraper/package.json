@@ -1,0 +1,6 @@
+{
+    "type": "module",
+    "dependencies": {
+        "@octokit/rest": "^19.0.7"
+    }
+}

@@ -1,0 +1,2468 @@
+{
+    "all_public_dependent_repos": [
+        {
+            "name": "kornia/kornia",
+            "stars": 7890
+        },
+        {
+            "name": "ibis-project/ibis",
+            "stars": 2540
+        },
+        {
+            "name": "pymodbus-dev/pymodbus",
+            "stars": 1729
+        },
+        {
+            "name": "dr-prodigy/python-holidays",
+            "stars": 933
+        },
+        {
+            "name": "nachifur/MulimgViewer",
+            "stars": 811
+        },
+        {
+            "name": "AppDaemon/appdaemon",
+            "stars": 721
+        },
+        {
+            "name": "python-validators/validators",
+            "stars": 707
+        },
+        {
+            "name": "cisagov/decider",
+            "stars": 690
+        },
+        {
+            "name": "Unstructured-IO/unstructured",
+            "stars": 649
+        },
+        {
+            "name": "OpenMined/PyGrid-deprecated---see-PySyft-",
+            "stars": 615
+        },
+        {
+            "name": "pychess/pychess",
+            "stars": 571
+        },
+        {
+            "name": "VoltaML/voltaML-fast-stable-diffusion",
+            "stars": 540
+        },
+        {
+            "name": "DAGWorks-Inc/hamilton",
+            "stars": 490
+        },
+        {
+            "name": "scrapinghub/spidermon",
+            "stars": 452
+        },
+        {
+            "name": "ansible-community/ansible-consul",
+            "stars": 416
+        },
+        {
+            "name": "ParadoxAlarmInterface/pai",
+            "stars": 277
+        },
+        {
+            "name": "databand-ai/dbnd",
+            "stars": 240
+        },
+        {
+            "name": "cgarciae/treex",
+            "stars": 217
+        },
+        {
+            "name": "awslabs/tecli",
+            "stars": 203
+        },
+        {
+            "name": "codemation/pydbantic",
+            "stars": 191
+        },
+        {
+            "name": "alibaba/lightweight-neural-architecture-search",
+            "stars": 175
+        },
+        {
+            "name": "mindspore-lab/mindcv",
+            "stars": 162
+        },
+        {
+            "name": "eggplants/deepl-cli",
+            "stars": 160
+        },
+        {
+            "name": "34j/so-vits-svc-fork",
+            "stars": 150
+        },
+        {
+            "name": "klen/aioauth-client",
+            "stars": 141
+        },
+        {
+            "name": "UniMath/agda-unimath",
+            "stars": 128
+        },
+        {
+            "name": "NAFTeam/NAFF",
+            "stars": 128
+        },
+        {
+            "name": "SiEPIC/SiEPIC-Tools",
+            "stars": 123
+        },
+        {
+            "name": "Azure-Samples/azure-intelligent-edge-patterns",
+            "stars": 113
+        },
+        {
+            "name": "frenck/spook",
+            "stars": 99
+        },
+        {
+            "name": "DFortun81/AllTheThings",
+            "stars": 99
+        },
+        {
+            "name": "tyki6/MyJWT",
+            "stars": 92
+        },
+        {
+            "name": "flexcompute/tidy3d",
+            "stars": 83
+        },
+        {
+            "name": "MicroStrategy/mstrio-py",
+            "stars": 81
+        },
+        {
+            "name": "artiomn/markdown_articles_tool",
+            "stars": 78
+        },
+        {
+            "name": "OpShin/opshin",
+            "stars": 76
+        },
+        {
+            "name": "DCASE-REPO/DESED_task",
+            "stars": 75
+        },
+        {
+            "name": "carbonetes/diggity",
+            "stars": 66
+        },
+        {
+            "name": "AliciaCurth/CATENets",
+            "stars": 64
+        },
+        {
+            "name": "cohere-ai/cohere-python",
+            "stars": 62
+        },
+        {
+            "name": "cgarciae/treeo",
+            "stars": 60
+        },
+        {
+            "name": "Snowflake-Labs/snowcli",
+            "stars": 58
+        },
+        {
+            "name": "klen/marshmallow-peewee",
+            "stars": 56
+        },
+        {
+            "name": "PrefectHQ/langchain-prefect",
+            "stars": 45
+        },
+        {
+            "name": "molu8bits/modsecurity-parser",
+            "stars": 45
+        },
+        {
+            "name": "cloudwithax/pomice",
+            "stars": 43
+        },
+        {
+            "name": "FragileTech/fragile",
+            "stars": 43
+        },
+        {
+            "name": "sphinx-contrib/matlabdomain",
+            "stars": 41
+        },
+        {
+            "name": "bjlittle/geovista",
+            "stars": 39
+        },
+        {
+            "name": "dwreeves/dbt_linreg",
+            "stars": 38
+        },
+        {
+            "name": "awslabs/aws-code-habits",
+            "stars": 38
+        },
+        {
+            "name": "CCSI-Toolset/FOQUS",
+            "stars": 36
+        },
+        {
+            "name": "music-assistant/server",
+            "stars": 35
+        },
+        {
+            "name": "datnguye/dbterd",
+            "stars": 30
+        },
+        {
+            "name": "msalhab96/SpeeQ",
+            "stars": 30
+        },
+        {
+            "name": "continental/image-statistics-matching",
+            "stars": 29
+        },
+        {
+            "name": "brazilian-utils/brutils-python",
+            "stars": 29
+        },
+        {
+            "name": "certbot/josepy",
+            "stars": 29
+        },
+        {
+            "name": "cropsinsilico/yggdrasil",
+            "stars": 29
+        },
+        {
+            "name": "espressif/idf-component-manager",
+            "stars": 27
+        },
+        {
+            "name": "alcides/GeneticEngine",
+            "stars": 26
+        },
+        {
+            "name": "plugwise/plugwise-beta",
+            "stars": 24
+        },
+        {
+            "name": "PyLops/curvelops",
+            "stars": 24
+        },
+        {
+            "name": "supertylerc/network-static-analysis",
+            "stars": 23
+        },
+        {
+            "name": "klen/peewee-aio",
+            "stars": 23
+        },
+        {
+            "name": "ChrisThePCGeek/k3s-ansible-traefik-rancher",
+            "stars": 23
+        },
+        {
+            "name": "file-validator/file-validator",
+            "stars": 23
+        },
+        {
+            "name": "Samuel-Roach/ergast-py",
+            "stars": 22
+        },
+        {
+            "name": "ADE-Scheduler/ADE-Scheduler",
+            "stars": 22
+        },
+        {
+            "name": "amosjyng/vcr-langchain",
+            "stars": 21
+        },
+        {
+            "name": "airbytehq/airbyte-platform",
+            "stars": 20
+        },
+        {
+            "name": "scverse/scvi-tools-skeleton",
+            "stars": 19
+        },
+        {
+            "name": "Conner1115/Amjad-GPT-Langchain",
+            "stars": 19
+        },
+        {
+            "name": "Xzya/django-web-components",
+            "stars": 19
+        },
+        {
+            "name": "aws-greengrass/aws-greengrass-gdk-cli",
+            "stars": 18
+        },
+        {
+            "name": "lyz-code/pydo",
+            "stars": 17
+        },
+        {
+            "name": "klen/muffin-admin",
+            "stars": 17
+        },
+        {
+            "name": "GreyNoise-Intelligence/greynoise-maltego",
+            "stars": 17
+        },
+        {
+            "name": "marcolivierarsenault/moonraker-home-assistant",
+            "stars": 17
+        },
+        {
+            "name": "PanJinquan/base-utils",
+            "stars": 17
+        },
+        {
+            "name": "fluidml/fluidml",
+            "stars": 17
+        },
+        {
+            "name": "unixorn/ha-mqtt-discoverable",
+            "stars": 17
+        },
+        {
+            "name": "plaans/aries",
+            "stars": 16
+        },
+        {
+            "name": "IRLL/HierachyCraft",
+            "stars": 16
+        },
+        {
+            "name": "aaalgo/ljpeg",
+            "stars": 16
+        },
+        {
+            "name": "Azure4DevOps/check-azure-bicep",
+            "stars": 16
+        },
+        {
+            "name": "MujyKun/IreneBot",
+            "stars": 15
+        },
+        {
+            "name": "leandcesar/bobotinho",
+            "stars": 14
+        },
+        {
+            "name": "hmakelin/gisnav",
+            "stars": 14
+        },
+        {
+            "name": "two2tee/WorldModelPlanning",
+            "stars": 14
+        },
+        {
+            "name": "bil/licorice",
+            "stars": 14
+        },
+        {
+            "name": "ape364/aioetherscan",
+            "stars": 13
+        },
+        {
+            "name": "Xaik89/ai_voice_assistant_tg_bot",
+            "stars": 13
+        },
+        {
+            "name": "cantinilab/Mowgli",
+            "stars": 13
+        },
+        {
+            "name": "opendatalab/dsdl-sdk",
+            "stars": 12
+        },
+        {
+            "name": "klen/muffin-rest",
+            "stars": 12
+        },
+        {
+            "name": "martius-lab/AL4MyoChallenge",
+            "stars": 12
+        },
+        {
+            "name": "isaacharrisholt/quiffen",
+            "stars": 12
+        },
+        {
+            "name": "BradenM/pydngconverter",
+            "stars": 12
+        },
+        {
+            "name": "shbatm/hacs-isy994",
+            "stars": 12
+        },
+        {
+            "name": "LongxingTan/python-profeld",
+            "stars": 11
+        },
+        {
+            "name": "CaptorAB/OpenSeries",
+            "stars": 11
+        },
+        {
+            "name": "muehlemann-popp/django-materialized-view",
+            "stars": 11
+        },
+        {
+            "name": "cuicaihao/split_raster",
+            "stars": 10
+        },
+        {
+            "name": "klen/aio-databases",
+            "stars": 10
+        },
+        {
+            "name": "l1onsun/snake_di",
+            "stars": 10
+        },
+        {
+            "name": "fadedzipper/gem5-cxl",
+            "stars": 10
+        },
+        {
+            "name": "eggplants/getjump",
+            "stars": 9
+        },
+        {
+            "name": "ORNL/curifactory",
+            "stars": 9
+        },
+        {
+            "name": "department-of-veterans-affairs/abd-vro",
+            "stars": 9
+        },
+        {
+            "name": "BoostryJP/ibet-Wallet-API",
+            "stars": 9
+        },
+        {
+            "name": "scieloorg/opac",
+            "stars": 9
+        },
+        {
+            "name": "netbox-community/netbox-python",
+            "stars": 9
+        },
+        {
+            "name": "Kludex/fastapi-dependency",
+            "stars": 9
+        },
+        {
+            "name": "opera-adt/sweets",
+            "stars": 9
+        },
+        {
+            "name": "marvinpfoertner/linpde-gp",
+            "stars": 8
+        },
+        {
+            "name": "mathpluscode/ImgX-DiffSeg",
+            "stars": 8
+        },
+        {
+            "name": "luismayta/zsh-vscodium",
+            "stars": 8
+        },
+        {
+            "name": "luismayta/zsh-rust",
+            "stars": 8
+        },
+        {
+            "name": "zombie-einstein/flock_env",
+            "stars": 8
+        },
+        {
+            "name": "VectorInstitute/kaleidoscope-sdk",
+            "stars": 8
+        },
+        {
+            "name": "BoostryJP/ibet-Prime",
+            "stars": 8
+        },
+        {
+            "name": "rockstar-000/supabase-py",
+            "stars": 7
+        },
+        {
+            "name": "oliverandrich/django-poetry-startproject",
+            "stars": 7
+        },
+        {
+            "name": "microsoft/times-excel-reader",
+            "stars": 7
+        },
+        {
+            "name": "NHSDigital/electronic-prescription-service-api",
+            "stars": 7
+        },
+        {
+            "name": "Garden-AI/garden",
+            "stars": 7
+        },
+        {
+            "name": "DephyInc/Actuator-Package",
+            "stars": 7
+        },
+        {
+            "name": "crypto-org-chain/chainlibpy",
+            "stars": 7
+        },
+        {
+            "name": "capitalone/federated-model-aggregation",
+            "stars": 7
+        },
+        {
+            "name": "engisalor/sketch-grammar-explorer",
+            "stars": 7
+        },
+        {
+            "name": "dapper91/crontools",
+            "stars": 7
+        },
+        {
+            "name": "v3ss0n/cookiecutter-starlite-halfstack",
+            "stars": 7
+        },
+        {
+            "name": "rav4kumar/openpilot",
+            "stars": 7
+        },
+        {
+            "name": "DrTexx/Volux",
+            "stars": 6
+        },
+        {
+            "name": "MaastrichtU-IDS/knowledge-collaboratory",
+            "stars": 6
+        },
+        {
+            "name": "lovelace-rounded/ui",
+            "stars": 6
+        },
+        {
+            "name": "reportportal/agent-python-behave",
+            "stars": 6
+        },
+        {
+            "name": "HangJung97/ASCENT",
+            "stars": 6
+        },
+        {
+            "name": "acdalal/geothermal",
+            "stars": 6
+        },
+        {
+            "name": "VEX-Robotics-AI/VEX-Py",
+            "stars": 6
+        },
+        {
+            "name": "OpenTrafficCam/OTAnalytics",
+            "stars": 6
+        },
+        {
+            "name": "eggplants/shindan-cli",
+            "stars": 6
+        },
+        {
+            "name": "certego/BuffaLogs",
+            "stars": 5
+        },
+        {
+            "name": "xinp-hub/pydiggs",
+            "stars": 5
+        },
+        {
+            "name": "jtkiley/carma_python",
+            "stars": 5
+        },
+        {
+            "name": "medusa-4D/medusa",
+            "stars": 5
+        },
+        {
+            "name": "Dana-Farber-AIOS/HiPPO-Jax",
+            "stars": 5
+        },
+        {
+            "name": "PrincetonUniversity/specfem2d_kokkos",
+            "stars": 5
+        },
+        {
+            "name": "ansiblebook/ansible_role_ssh",
+            "stars": 5
+        },
+        {
+            "name": "BiomedSciAI/fuse-drug",
+            "stars": 5
+        },
+        {
+            "name": "donwany/gpt3datagen",
+            "stars": 5
+        },
+        {
+            "name": "credit-wallet/joey-mono",
+            "stars": 5
+        },
+        {
+            "name": "valentin-cnt/rl-basics",
+            "stars": 5
+        },
+        {
+            "name": "feliche93/cryptoneur",
+            "stars": 5
+        },
+        {
+            "name": "maread99/market_analy",
+            "stars": 5
+        },
+        {
+            "name": "alphagov/consent-api",
+            "stars": 5
+        },
+        {
+            "name": "olympian-21/Alpha-Trading-Bot",
+            "stars": 4
+        },
+        {
+            "name": "pamelafox/simple-fastapi-container",
+            "stars": 4
+        },
+        {
+            "name": "pmatigakis/article-extraction",
+            "stars": 4
+        },
+        {
+            "name": "milkytoasto/DSChaosMod",
+            "stars": 4
+        },
+        {
+            "name": "Sage-Bionetworks/challengeutils",
+            "stars": 4
+        },
+        {
+            "name": "dgarros/nornir-dispatch",
+            "stars": 4
+        },
+        {
+            "name": "City-of-Helsinki/helerm",
+            "stars": 4
+        },
+        {
+            "name": "digitalfortress-dev/django-templates",
+            "stars": 4
+        },
+        {
+            "name": "antero9471/buying_selling_devops",
+            "stars": 4
+        },
+        {
+            "name": "Azure/mlops-v2-ado-demo",
+            "stars": 4
+        },
+        {
+            "name": "SauravMaheshkar/python-template",
+            "stars": 4
+        },
+        {
+            "name": "CoolCat467/NEAT-Template-Python3",
+            "stars": 4
+        },
+        {
+            "name": "klen/knocker",
+            "stars": 4
+        },
+        {
+            "name": "Djaizz/DjAIoT",
+            "stars": 4
+        },
+        {
+            "name": "PierreC1024/airflow-provider-bigquery-reservation",
+            "stars": 4
+        },
+        {
+            "name": "opendatadiscovery/odd-collector-profiler",
+            "stars": 4
+        },
+        {
+            "name": "TJStienstra/symmeplot",
+            "stars": 4
+        },
+        {
+            "name": "data-liberation-project/phmsa-hazmat-incident-reports",
+            "stars": 4
+        },
+        {
+            "name": "palfrey/epgrabber",
+            "stars": 4
+        },
+        {
+            "name": "CoolCat467/Scanner-Server",
+            "stars": 3
+        },
+        {
+            "name": "decodableco/dbt-decodable",
+            "stars": 3
+        },
+        {
+            "name": "Christianmcfadden1/WBI-Technologies",
+            "stars": 3
+        },
+        {
+            "name": "napalm-automation-community/napalm-srlinux",
+            "stars": 3
+        },
+        {
+            "name": "jsvisa/blockchain-etl",
+            "stars": 3
+        },
+        {
+            "name": "pmatigakis/text-analysis-helpers",
+            "stars": 3
+        },
+        {
+            "name": "opencas/MulimgViewer",
+            "stars": 3
+        },
+        {
+            "name": "UCLH-Foundry/Garden-Path",
+            "stars": 3
+        },
+        {
+            "name": "TOBB-ETU-CS-Community/Sigma-Chatbot",
+            "stars": 3
+        },
+        {
+            "name": "enola-dev/enola",
+            "stars": 3
+        },
+        {
+            "name": "FabianVegaA/sparrow",
+            "stars": 3
+        },
+        {
+            "name": "odi1n/kinopoisk_dev",
+            "stars": 3
+        },
+        {
+            "name": "B612-Asteroid-Institute/cutouts",
+            "stars": 3
+        },
+        {
+            "name": "EPFL-ENAC/unhcr-geneva-tech-hub-app",
+            "stars": 3
+        },
+        {
+            "name": "linz/qgis-plugin-repository",
+            "stars": 3
+        },
+        {
+            "name": "HE-Arc/anansi",
+            "stars": 3
+        },
+        {
+            "name": "kiwicom/kiwi-structlog-config",
+            "stars": 3
+        },
+        {
+            "name": "qwerdvd/ArkDamage",
+            "stars": 3
+        },
+        {
+            "name": "john-sandall/geopython-2023",
+            "stars": 3
+        },
+        {
+            "name": "NGLSG/QEdgeBot",
+            "stars": 3
+        },
+        {
+            "name": "magicianmakar/Algorithm-Trading",
+            "stars": 3
+        },
+        {
+            "name": "eseglem/pycql2",
+            "stars": 3
+        },
+        {
+            "name": "Djaizz/XDF",
+            "stars": 3
+        },
+        {
+            "name": "ThatXliner/dotfiles",
+            "stars": 3
+        },
+        {
+            "name": "Djaizz/Django-Query-Graph",
+            "stars": 3
+        },
+        {
+            "name": "spacelift-io/user-documentation",
+            "stars": 3
+        },
+        {
+            "name": "utikpuhlik/Jsonic",
+            "stars": 3
+        },
+        {
+            "name": "ridgerchu/gpt-neox-RWKV",
+            "stars": 3
+        },
+        {
+            "name": "andresionek91/supletivo-data-hackers-AWS-CDK",
+            "stars": 3
+        },
+        {
+            "name": "luminai-companion/koboldai-interceptor",
+            "stars": 3
+        },
+        {
+            "name": "ladukwek/ESDP-AP7-ATTRACTOR",
+            "stars": 3
+        },
+        {
+            "name": "cpcloud/ibis",
+            "stars": 3
+        },
+        {
+            "name": "MobileTeleSystems/etl-entities",
+            "stars": 3
+        },
+        {
+            "name": "wonhyeongseo/Cerence-NLP-Challenge",
+            "stars": 3
+        },
+        {
+            "name": "crunchdao/nonlinearities-multifactors-model-machine-learning",
+            "stars": 3
+        },
+        {
+            "name": "Ponte-Energy-Partners/peprock",
+            "stars": 3
+        },
+        {
+            "name": "jindaxiang/qhsdk",
+            "stars": 3
+        },
+        {
+            "name": "stopwhispering/plants-backend",
+            "stars": 3
+        },
+        {
+            "name": "Dev-Mehta/dj-greatreads",
+            "stars": 3
+        },
+        {
+            "name": "Joaopeuko/binanceSpotEasyT",
+            "stars": 2
+        },
+        {
+            "name": "TechnocultureResearch/landlog",
+            "stars": 2
+        },
+        {
+            "name": "nminaian/FlumeControl",
+            "stars": 2
+        },
+        {
+            "name": "ghga-de/auth-service",
+            "stars": 2
+        },
+        {
+            "name": "opnfv/functest-xtesting",
+            "stars": 2
+        },
+        {
+            "name": "MujyKun/IreneAPI",
+            "stars": 2
+        },
+        {
+            "name": "Vlaska/robomania",
+            "stars": 2
+        },
+        {
+            "name": "matthewdeanmartin/markpickle",
+            "stars": 2
+        },
+        {
+            "name": "ConsciousML/python-code-quality-ci",
+            "stars": 2
+        },
+        {
+            "name": "klen/muffin-peewee-aio",
+            "stars": 2
+        },
+        {
+            "name": "IEEE-NITK/corpus",
+            "stars": 2
+        },
+        {
+            "name": "Javierif/Global-AI-Bootcamp-2023",
+            "stars": 2
+        },
+        {
+            "name": "camptocamp/helm-mutualize",
+            "stars": 2
+        },
+        {
+            "name": "camptocamp/helm-monitoring",
+            "stars": 2
+        },
+        {
+            "name": "worldr/nhound",
+            "stars": 2
+        },
+        {
+            "name": "TabbyML/tabby",
+            "stars": 2
+        },
+        {
+            "name": "opendatadiscovery/odd-collector-azure",
+            "stars": 2
+        },
+        {
+            "name": "libranet/autoadd-bindir",
+            "stars": 2
+        },
+        {
+            "name": "mvshmakov/dotfiles",
+            "stars": 2
+        },
+        {
+            "name": "bpolishevsk/python-web-dev-21",
+            "stars": 2
+        },
+        {
+            "name": "zf223669/DiffmotionGG-beta",
+            "stars": 2
+        },
+        {
+            "name": "saurbhc/awsslack",
+            "stars": 2
+        },
+        {
+            "name": "ghga-de/hexkit",
+            "stars": 2
+        },
+        {
+            "name": "nspcc-dev/neofs-testlib",
+            "stars": 2
+        },
+        {
+            "name": "matthewdeanmartin/matthewdeanmartin",
+            "stars": 2
+        },
+        {
+            "name": "wdescamps/human",
+            "stars": 2
+        },
+        {
+            "name": "wallseat/MIREA_database_administration",
+            "stars": 2
+        },
+        {
+            "name": "PustakP/BookTunes",
+            "stars": 2
+        },
+        {
+            "name": "thomaswmorris/maria",
+            "stars": 2
+        },
+        {
+            "name": "DOMINATOR-XD/gptfree-telegram-bot",
+            "stars": 2
+        },
+        {
+            "name": "mkaz/oneliner",
+            "stars": 2
+        },
+        {
+            "name": "SamuelYvon/gscp",
+            "stars": 2
+        },
+        {
+            "name": "Z2PackDev/bands-inspect",
+            "stars": 2
+        },
+        {
+            "name": "SinNation/CStest",
+            "stars": 2
+        },
+        {
+            "name": "Ongoing-Knowledge-Scraping/Rock-Paper-Scissors",
+            "stars": 2
+        },
+        {
+            "name": "MohammadD3veloper/CookieCutterD3V",
+            "stars": 2
+        },
+        {
+            "name": "MoonlightGroup/anime.py",
+            "stars": 2
+        },
+        {
+            "name": "airo-ugent/airo-mono",
+            "stars": 2
+        },
+        {
+            "name": "purna135/Aesasa-test",
+            "stars": 2
+        },
+        {
+            "name": "unixorn/ha-mqtt-discoverable-cli",
+            "stars": 2
+        },
+        {
+            "name": "mrlonis/python-open-restaurant-django",
+            "stars": 2
+        },
+        {
+            "name": "Shadblade5/Arma-Bot",
+            "stars": 2
+        },
+        {
+            "name": "surajit003/DjangoERP",
+            "stars": 2
+        },
+        {
+            "name": "gurrutia/videoxt",
+            "stars": 2
+        },
+        {
+            "name": "carbon-data-specification/Power-Systems-Data-API-Demonstrator",
+            "stars": 2
+        },
+        {
+            "name": "danb27/chat-toolkit",
+            "stars": 2
+        },
+        {
+            "name": "QuakeSaver/quakesaver-client",
+            "stars": 2
+        },
+        {
+            "name": "pferrariog/aut-vale-alimentacao",
+            "stars": 2
+        },
+        {
+            "name": "rwxd/pyreadwise",
+            "stars": 2
+        },
+        {
+            "name": "darkguin/dark-utils",
+            "stars": 2
+        },
+        {
+            "name": "fengzhongzhu1621/xTool",
+            "stars": 2
+        },
+        {
+            "name": "ElixirNote/elixirext",
+            "stars": 2
+        },
+        {
+            "name": "JBercich/networkrl",
+            "stars": 2
+        },
+        {
+            "name": "pattertj/accountmanager",
+            "stars": 2
+        },
+        {
+            "name": "richardangell/tabular-trees",
+            "stars": 2
+        },
+        {
+            "name": "iScsc/RootPythia",
+            "stars": 2
+        },
+        {
+            "name": "danorel/int20-ds",
+            "stars": 2
+        },
+        {
+            "name": "olympian-21/Kaggle-Blueprints",
+            "stars": 2
+        },
+        {
+            "name": "CubeVic/My_notes",
+            "stars": 2
+        },
+        {
+            "name": "agusmdev/fastapi-ddd-template",
+            "stars": 2
+        },
+        {
+            "name": "vedantparikh/portfolia_app",
+            "stars": 2
+        },
+        {
+            "name": "sasunday26/discord-music-bot",
+            "stars": 2
+        },
+        {
+            "name": "luxteam/jobs_test_houdini",
+            "stars": 2
+        },
+        {
+            "name": "JustinGoheen/lightning-pod-vision",
+            "stars": 2
+        },
+        {
+            "name": "jvmsangkal/python-starter",
+            "stars": 2
+        },
+        {
+            "name": "nbhushan/Quasi-Deterministic-HMMs",
+            "stars": 2
+        },
+        {
+            "name": "thensel23/collaborate",
+            "stars": 2
+        },
+        {
+            "name": "getindata/flink-sql-runner",
+            "stars": 2
+        },
+        {
+            "name": "Samtheram13/spotifysaver",
+            "stars": 2
+        },
+        {
+            "name": "lllchak/nlp",
+            "stars": 2
+        },
+        {
+            "name": "RyanEricLamb/data-engineering-bus-tracker",
+            "stars": 2
+        },
+        {
+            "name": "hatlabs/SH-RPi-daemon",
+            "stars": 2
+        },
+        {
+            "name": "scaleway/serverless-functions-python",
+            "stars": 2
+        },
+        {
+            "name": "RomainBrault/python-whiteprint",
+            "stars": 2
+        },
+        {
+            "name": "bayoudhif/web-based-application-object-detection",
+            "stars": 2
+        },
+        {
+            "name": "krestovsky13/webtronics",
+            "stars": 2
+        },
+        {
+            "name": "alexeygalt/Todolist",
+            "stars": 2
+        },
+        {
+            "name": "Thomas-mcinally/stockprice",
+            "stars": 2
+        },
+        {
+            "name": "mrBlackHat777/Salary_Canada",
+            "stars": 2
+        },
+        {
+            "name": "PandasAreBears/MakkaPakka",
+            "stars": 2
+        },
+        {
+            "name": "MichaelYcCho/michael-bnb-backend",
+            "stars": 2
+        },
+        {
+            "name": "nicklasbekkevold/ssbgrid",
+            "stars": 2
+        },
+        {
+            "name": "Azure4DevOps/GithubAzureDevOpsSpeedTest",
+            "stars": 2
+        }
+    ],
+    "total_dependents_number": 113875,
+    "public_dependents_number": 298,
+    "private_dependents_number": 113577,
+    "public_dependents_stars": 18,
+    "badges": {
+        "total": "[![](https://img.shields.io/static/v1?label=Used%20by&message=113875&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents)",
+        "public": "[![](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=298&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents)",
+        "private": "[![](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=113577&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents)",
+        "stars": "[![](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=18&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents)"
+    },
+    "packages": [
+        [
+            {
+                "id": "UGFja2FnZS0zMjE2NTI2NzM4",
+                "name": "pre-commit/pre-commit",
+                "url": "https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0zMjE2NTI2NzM4",
+                "public_dependent_stars": 18,
+                "public_dependents": [
+                    {
+                        "name": "Azure4DevOps/check-azure-bicep",
+                        "stars": 16
+                    },
+                    {
+                        "name": "Azure4DevOps/GithubAzureDevOpsSpeedTest",
+                        "stars": 2
+                    }
+                ],
+                "public_dependents_number": 2,
+                "private_dependents_number": 0,
+                "total_dependents_number": 2,
+                "badges": {
+                    "total": "[![](https://img.shields.io/static/v1?label=Used%20by&message=2&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0zMjE2NTI2NzM4)",
+                    "public": "[![](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=2&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0zMjE2NTI2NzM4)",
+                    "private": "[![](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=0&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0zMjE2NTI2NzM4)",
+                    "stars": "[![](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=18&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0zMjE2NTI2NzM4)"
+                }
+            },
+            {
+                "id": "UGFja2FnZS01MjQzNTQ0OQ%3D%3D",
+                "name": "pre-commit",
+                "url": "https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS01MjQzNTQ0OQ%3D%3D",
+                "public_dependent_stars": 0,
+                "public_dependents": [
+                    {
+                        "name": "kornia/kornia",
+                        "stars": 7890
+                    },
+                    {
+                        "name": "ibis-project/ibis",
+                        "stars": 2540
+                    },
+                    {
+                        "name": "pymodbus-dev/pymodbus",
+                        "stars": 1729
+                    },
+                    {
+                        "name": "dr-prodigy/python-holidays",
+                        "stars": 933
+                    },
+                    {
+                        "name": "nachifur/MulimgViewer",
+                        "stars": 811
+                    },
+                    {
+                        "name": "AppDaemon/appdaemon",
+                        "stars": 721
+                    },
+                    {
+                        "name": "python-validators/validators",
+                        "stars": 707
+                    },
+                    {
+                        "name": "cisagov/decider",
+                        "stars": 690
+                    },
+                    {
+                        "name": "Unstructured-IO/unstructured",
+                        "stars": 649
+                    },
+                    {
+                        "name": "OpenMined/PyGrid-deprecated---see-PySyft-",
+                        "stars": 615
+                    },
+                    {
+                        "name": "pychess/pychess",
+                        "stars": 571
+                    },
+                    {
+                        "name": "VoltaML/voltaML-fast-stable-diffusion",
+                        "stars": 540
+                    },
+                    {
+                        "name": "DAGWorks-Inc/hamilton",
+                        "stars": 490
+                    },
+                    {
+                        "name": "scrapinghub/spidermon",
+                        "stars": 452
+                    },
+                    {
+                        "name": "ansible-community/ansible-consul",
+                        "stars": 416
+                    },
+                    {
+                        "name": "ParadoxAlarmInterface/pai",
+                        "stars": 277
+                    },
+                    {
+                        "name": "databand-ai/dbnd",
+                        "stars": 240
+                    },
+                    {
+                        "name": "cgarciae/treex",
+                        "stars": 217
+                    },
+                    {
+                        "name": "awslabs/tecli",
+                        "stars": 203
+                    },
+                    {
+                        "name": "codemation/pydbantic",
+                        "stars": 191
+                    },
+                    {
+                        "name": "alibaba/lightweight-neural-architecture-search",
+                        "stars": 175
+                    },
+                    {
+                        "name": "mindspore-lab/mindcv",
+                        "stars": 162
+                    },
+                    {
+                        "name": "eggplants/deepl-cli",
+                        "stars": 160
+                    },
+                    {
+                        "name": "34j/so-vits-svc-fork",
+                        "stars": 150
+                    },
+                    {
+                        "name": "klen/aioauth-client",
+                        "stars": 141
+                    },
+                    {
+                        "name": "UniMath/agda-unimath",
+                        "stars": 128
+                    },
+                    {
+                        "name": "NAFTeam/NAFF",
+                        "stars": 128
+                    },
+                    {
+                        "name": "SiEPIC/SiEPIC-Tools",
+                        "stars": 123
+                    },
+                    {
+                        "name": "Azure-Samples/azure-intelligent-edge-patterns",
+                        "stars": 113
+                    },
+                    {
+                        "name": "frenck/spook",
+                        "stars": 99
+                    },
+                    {
+                        "name": "DFortun81/AllTheThings",
+                        "stars": 99
+                    },
+                    {
+                        "name": "tyki6/MyJWT",
+                        "stars": 92
+                    },
+                    {
+                        "name": "flexcompute/tidy3d",
+                        "stars": 83
+                    },
+                    {
+                        "name": "MicroStrategy/mstrio-py",
+                        "stars": 81
+                    },
+                    {
+                        "name": "artiomn/markdown_articles_tool",
+                        "stars": 78
+                    },
+                    {
+                        "name": "OpShin/opshin",
+                        "stars": 76
+                    },
+                    {
+                        "name": "DCASE-REPO/DESED_task",
+                        "stars": 75
+                    },
+                    {
+                        "name": "carbonetes/diggity",
+                        "stars": 66
+                    },
+                    {
+                        "name": "AliciaCurth/CATENets",
+                        "stars": 64
+                    },
+                    {
+                        "name": "cohere-ai/cohere-python",
+                        "stars": 62
+                    },
+                    {
+                        "name": "cgarciae/treeo",
+                        "stars": 60
+                    },
+                    {
+                        "name": "Snowflake-Labs/snowcli",
+                        "stars": 58
+                    },
+                    {
+                        "name": "klen/marshmallow-peewee",
+                        "stars": 56
+                    },
+                    {
+                        "name": "PrefectHQ/langchain-prefect",
+                        "stars": 45
+                    },
+                    {
+                        "name": "molu8bits/modsecurity-parser",
+                        "stars": 45
+                    },
+                    {
+                        "name": "cloudwithax/pomice",
+                        "stars": 43
+                    },
+                    {
+                        "name": "FragileTech/fragile",
+                        "stars": 43
+                    },
+                    {
+                        "name": "sphinx-contrib/matlabdomain",
+                        "stars": 41
+                    },
+                    {
+                        "name": "bjlittle/geovista",
+                        "stars": 39
+                    },
+                    {
+                        "name": "dwreeves/dbt_linreg",
+                        "stars": 38
+                    },
+                    {
+                        "name": "awslabs/aws-code-habits",
+                        "stars": 38
+                    },
+                    {
+                        "name": "CCSI-Toolset/FOQUS",
+                        "stars": 36
+                    },
+                    {
+                        "name": "music-assistant/server",
+                        "stars": 35
+                    },
+                    {
+                        "name": "datnguye/dbterd",
+                        "stars": 30
+                    },
+                    {
+                        "name": "msalhab96/SpeeQ",
+                        "stars": 30
+                    },
+                    {
+                        "name": "continental/image-statistics-matching",
+                        "stars": 29
+                    },
+                    {
+                        "name": "brazilian-utils/brutils-python",
+                        "stars": 29
+                    },
+                    {
+                        "name": "certbot/josepy",
+                        "stars": 29
+                    },
+                    {
+                        "name": "cropsinsilico/yggdrasil",
+                        "stars": 29
+                    },
+                    {
+                        "name": "espressif/idf-component-manager",
+                        "stars": 27
+                    },
+                    {
+                        "name": "alcides/GeneticEngine",
+                        "stars": 26
+                    },
+                    {
+                        "name": "plugwise/plugwise-beta",
+                        "stars": 24
+                    },
+                    {
+                        "name": "PyLops/curvelops",
+                        "stars": 24
+                    },
+                    {
+                        "name": "supertylerc/network-static-analysis",
+                        "stars": 23
+                    },
+                    {
+                        "name": "klen/peewee-aio",
+                        "stars": 23
+                    },
+                    {
+                        "name": "ChrisThePCGeek/k3s-ansible-traefik-rancher",
+                        "stars": 23
+                    },
+                    {
+                        "name": "file-validator/file-validator",
+                        "stars": 23
+                    },
+                    {
+                        "name": "Samuel-Roach/ergast-py",
+                        "stars": 22
+                    },
+                    {
+                        "name": "ADE-Scheduler/ADE-Scheduler",
+                        "stars": 22
+                    },
+                    {
+                        "name": "amosjyng/vcr-langchain",
+                        "stars": 21
+                    },
+                    {
+                        "name": "airbytehq/airbyte-platform",
+                        "stars": 20
+                    },
+                    {
+                        "name": "scverse/scvi-tools-skeleton",
+                        "stars": 19
+                    },
+                    {
+                        "name": "Conner1115/Amjad-GPT-Langchain",
+                        "stars": 19
+                    },
+                    {
+                        "name": "Xzya/django-web-components",
+                        "stars": 19
+                    },
+                    {
+                        "name": "aws-greengrass/aws-greengrass-gdk-cli",
+                        "stars": 18
+                    },
+                    {
+                        "name": "lyz-code/pydo",
+                        "stars": 17
+                    },
+                    {
+                        "name": "klen/muffin-admin",
+                        "stars": 17
+                    },
+                    {
+                        "name": "GreyNoise-Intelligence/greynoise-maltego",
+                        "stars": 17
+                    },
+                    {
+                        "name": "marcolivierarsenault/moonraker-home-assistant",
+                        "stars": 17
+                    },
+                    {
+                        "name": "PanJinquan/base-utils",
+                        "stars": 17
+                    },
+                    {
+                        "name": "fluidml/fluidml",
+                        "stars": 17
+                    },
+                    {
+                        "name": "unixorn/ha-mqtt-discoverable",
+                        "stars": 17
+                    },
+                    {
+                        "name": "plaans/aries",
+                        "stars": 16
+                    },
+                    {
+                        "name": "IRLL/HierachyCraft",
+                        "stars": 16
+                    },
+                    {
+                        "name": "aaalgo/ljpeg",
+                        "stars": 16
+                    },
+                    {
+                        "name": "MujyKun/IreneBot",
+                        "stars": 15
+                    },
+                    {
+                        "name": "leandcesar/bobotinho",
+                        "stars": 14
+                    },
+                    {
+                        "name": "hmakelin/gisnav",
+                        "stars": 14
+                    },
+                    {
+                        "name": "two2tee/WorldModelPlanning",
+                        "stars": 14
+                    },
+                    {
+                        "name": "bil/licorice",
+                        "stars": 14
+                    },
+                    {
+                        "name": "ape364/aioetherscan",
+                        "stars": 13
+                    },
+                    {
+                        "name": "Xaik89/ai_voice_assistant_tg_bot",
+                        "stars": 13
+                    },
+                    {
+                        "name": "cantinilab/Mowgli",
+                        "stars": 13
+                    },
+                    {
+                        "name": "opendatalab/dsdl-sdk",
+                        "stars": 12
+                    },
+                    {
+                        "name": "klen/muffin-rest",
+                        "stars": 12
+                    },
+                    {
+                        "name": "martius-lab/AL4MyoChallenge",
+                        "stars": 12
+                    },
+                    {
+                        "name": "isaacharrisholt/quiffen",
+                        "stars": 12
+                    },
+                    {
+                        "name": "BradenM/pydngconverter",
+                        "stars": 12
+                    },
+                    {
+                        "name": "shbatm/hacs-isy994",
+                        "stars": 12
+                    },
+                    {
+                        "name": "LongxingTan/python-profeld",
+                        "stars": 11
+                    },
+                    {
+                        "name": "CaptorAB/OpenSeries",
+                        "stars": 11
+                    },
+                    {
+                        "name": "muehlemann-popp/django-materialized-view",
+                        "stars": 11
+                    },
+                    {
+                        "name": "cuicaihao/split_raster",
+                        "stars": 10
+                    },
+                    {
+                        "name": "klen/aio-databases",
+                        "stars": 10
+                    },
+                    {
+                        "name": "l1onsun/snake_di",
+                        "stars": 10
+                    },
+                    {
+                        "name": "fadedzipper/gem5-cxl",
+                        "stars": 10
+                    },
+                    {
+                        "name": "eggplants/getjump",
+                        "stars": 9
+                    },
+                    {
+                        "name": "ORNL/curifactory",
+                        "stars": 9
+                    },
+                    {
+                        "name": "department-of-veterans-affairs/abd-vro",
+                        "stars": 9
+                    },
+                    {
+                        "name": "BoostryJP/ibet-Wallet-API",
+                        "stars": 9
+                    },
+                    {
+                        "name": "scieloorg/opac",
+                        "stars": 9
+                    },
+                    {
+                        "name": "netbox-community/netbox-python",
+                        "stars": 9
+                    },
+                    {
+                        "name": "Kludex/fastapi-dependency",
+                        "stars": 9
+                    },
+                    {
+                        "name": "opera-adt/sweets",
+                        "stars": 9
+                    },
+                    {
+                        "name": "marvinpfoertner/linpde-gp",
+                        "stars": 8
+                    },
+                    {
+                        "name": "mathpluscode/ImgX-DiffSeg",
+                        "stars": 8
+                    },
+                    {
+                        "name": "luismayta/zsh-vscodium",
+                        "stars": 8
+                    },
+                    {
+                        "name": "luismayta/zsh-rust",
+                        "stars": 8
+                    },
+                    {
+                        "name": "zombie-einstein/flock_env",
+                        "stars": 8
+                    },
+                    {
+                        "name": "VectorInstitute/kaleidoscope-sdk",
+                        "stars": 8
+                    },
+                    {
+                        "name": "BoostryJP/ibet-Prime",
+                        "stars": 8
+                    },
+                    {
+                        "name": "rockstar-000/supabase-py",
+                        "stars": 7
+                    },
+                    {
+                        "name": "oliverandrich/django-poetry-startproject",
+                        "stars": 7
+                    },
+                    {
+                        "name": "microsoft/times-excel-reader",
+                        "stars": 7
+                    },
+                    {
+                        "name": "NHSDigital/electronic-prescription-service-api",
+                        "stars": 7
+                    },
+                    {
+                        "name": "Garden-AI/garden",
+                        "stars": 7
+                    },
+                    {
+                        "name": "DephyInc/Actuator-Package",
+                        "stars": 7
+                    },
+                    {
+                        "name": "crypto-org-chain/chainlibpy",
+                        "stars": 7
+                    },
+                    {
+                        "name": "capitalone/federated-model-aggregation",
+                        "stars": 7
+                    },
+                    {
+                        "name": "engisalor/sketch-grammar-explorer",
+                        "stars": 7
+                    },
+                    {
+                        "name": "dapper91/crontools",
+                        "stars": 7
+                    },
+                    {
+                        "name": "v3ss0n/cookiecutter-starlite-halfstack",
+                        "stars": 7
+                    },
+                    {
+                        "name": "rav4kumar/openpilot",
+                        "stars": 7
+                    },
+                    {
+                        "name": "DrTexx/Volux",
+                        "stars": 6
+                    },
+                    {
+                        "name": "MaastrichtU-IDS/knowledge-collaboratory",
+                        "stars": 6
+                    },
+                    {
+                        "name": "lovelace-rounded/ui",
+                        "stars": 6
+                    },
+                    {
+                        "name": "reportportal/agent-python-behave",
+                        "stars": 6
+                    },
+                    {
+                        "name": "HangJung97/ASCENT",
+                        "stars": 6
+                    },
+                    {
+                        "name": "acdalal/geothermal",
+                        "stars": 6
+                    },
+                    {
+                        "name": "VEX-Robotics-AI/VEX-Py",
+                        "stars": 6
+                    },
+                    {
+                        "name": "OpenTrafficCam/OTAnalytics",
+                        "stars": 6
+                    },
+                    {
+                        "name": "eggplants/shindan-cli",
+                        "stars": 6
+                    },
+                    {
+                        "name": "certego/BuffaLogs",
+                        "stars": 5
+                    },
+                    {
+                        "name": "xinp-hub/pydiggs",
+                        "stars": 5
+                    },
+                    {
+                        "name": "jtkiley/carma_python",
+                        "stars": 5
+                    },
+                    {
+                        "name": "medusa-4D/medusa",
+                        "stars": 5
+                    },
+                    {
+                        "name": "Dana-Farber-AIOS/HiPPO-Jax",
+                        "stars": 5
+                    },
+                    {
+                        "name": "PrincetonUniversity/specfem2d_kokkos",
+                        "stars": 5
+                    },
+                    {
+                        "name": "ansiblebook/ansible_role_ssh",
+                        "stars": 5
+                    },
+                    {
+                        "name": "BiomedSciAI/fuse-drug",
+                        "stars": 5
+                    },
+                    {
+                        "name": "donwany/gpt3datagen",
+                        "stars": 5
+                    },
+                    {
+                        "name": "credit-wallet/joey-mono",
+                        "stars": 5
+                    },
+                    {
+                        "name": "valentin-cnt/rl-basics",
+                        "stars": 5
+                    },
+                    {
+                        "name": "feliche93/cryptoneur",
+                        "stars": 5
+                    },
+                    {
+                        "name": "maread99/market_analy",
+                        "stars": 5
+                    },
+                    {
+                        "name": "alphagov/consent-api",
+                        "stars": 5
+                    },
+                    {
+                        "name": "olympian-21/Alpha-Trading-Bot",
+                        "stars": 4
+                    },
+                    {
+                        "name": "pamelafox/simple-fastapi-container",
+                        "stars": 4
+                    },
+                    {
+                        "name": "pmatigakis/article-extraction",
+                        "stars": 4
+                    },
+                    {
+                        "name": "milkytoasto/DSChaosMod",
+                        "stars": 4
+                    },
+                    {
+                        "name": "Sage-Bionetworks/challengeutils",
+                        "stars": 4
+                    },
+                    {
+                        "name": "dgarros/nornir-dispatch",
+                        "stars": 4
+                    },
+                    {
+                        "name": "City-of-Helsinki/helerm",
+                        "stars": 4
+                    },
+                    {
+                        "name": "digitalfortress-dev/django-templates",
+                        "stars": 4
+                    },
+                    {
+                        "name": "antero9471/buying_selling_devops",
+                        "stars": 4
+                    },
+                    {
+                        "name": "Azure/mlops-v2-ado-demo",
+                        "stars": 4
+                    },
+                    {
+                        "name": "SauravMaheshkar/python-template",
+                        "stars": 4
+                    },
+                    {
+                        "name": "CoolCat467/NEAT-Template-Python3",
+                        "stars": 4
+                    },
+                    {
+                        "name": "klen/knocker",
+                        "stars": 4
+                    },
+                    {
+                        "name": "Djaizz/DjAIoT",
+                        "stars": 4
+                    },
+                    {
+                        "name": "PierreC1024/airflow-provider-bigquery-reservation",
+                        "stars": 4
+                    },
+                    {
+                        "name": "opendatadiscovery/odd-collector-profiler",
+                        "stars": 4
+                    },
+                    {
+                        "name": "TJStienstra/symmeplot",
+                        "stars": 4
+                    },
+                    {
+                        "name": "data-liberation-project/phmsa-hazmat-incident-reports",
+                        "stars": 4
+                    },
+                    {
+                        "name": "palfrey/epgrabber",
+                        "stars": 4
+                    },
+                    {
+                        "name": "CoolCat467/Scanner-Server",
+                        "stars": 3
+                    },
+                    {
+                        "name": "decodableco/dbt-decodable",
+                        "stars": 3
+                    },
+                    {
+                        "name": "Christianmcfadden1/WBI-Technologies",
+                        "stars": 3
+                    },
+                    {
+                        "name": "napalm-automation-community/napalm-srlinux",
+                        "stars": 3
+                    },
+                    {
+                        "name": "jsvisa/blockchain-etl",
+                        "stars": 3
+                    },
+                    {
+                        "name": "pmatigakis/text-analysis-helpers",
+                        "stars": 3
+                    },
+                    {
+                        "name": "opencas/MulimgViewer",
+                        "stars": 3
+                    },
+                    {
+                        "name": "UCLH-Foundry/Garden-Path",
+                        "stars": 3
+                    },
+                    {
+                        "name": "TOBB-ETU-CS-Community/Sigma-Chatbot",
+                        "stars": 3
+                    },
+                    {
+                        "name": "enola-dev/enola",
+                        "stars": 3
+                    },
+                    {
+                        "name": "FabianVegaA/sparrow",
+                        "stars": 3
+                    },
+                    {
+                        "name": "odi1n/kinopoisk_dev",
+                        "stars": 3
+                    },
+                    {
+                        "name": "B612-Asteroid-Institute/cutouts",
+                        "stars": 3
+                    },
+                    {
+                        "name": "EPFL-ENAC/unhcr-geneva-tech-hub-app",
+                        "stars": 3
+                    },
+                    {
+                        "name": "linz/qgis-plugin-repository",
+                        "stars": 3
+                    },
+                    {
+                        "name": "HE-Arc/anansi",
+                        "stars": 3
+                    },
+                    {
+                        "name": "kiwicom/kiwi-structlog-config",
+                        "stars": 3
+                    },
+                    {
+                        "name": "qwerdvd/ArkDamage",
+                        "stars": 3
+                    },
+                    {
+                        "name": "john-sandall/geopython-2023",
+                        "stars": 3
+                    },
+                    {
+                        "name": "NGLSG/QEdgeBot",
+                        "stars": 3
+                    },
+                    {
+                        "name": "magicianmakar/Algorithm-Trading",
+                        "stars": 3
+                    },
+                    {
+                        "name": "eseglem/pycql2",
+                        "stars": 3
+                    },
+                    {
+                        "name": "Djaizz/XDF",
+                        "stars": 3
+                    },
+                    {
+                        "name": "ThatXliner/dotfiles",
+                        "stars": 3
+                    },
+                    {
+                        "name": "Djaizz/Django-Query-Graph",
+                        "stars": 3
+                    },
+                    {
+                        "name": "spacelift-io/user-documentation",
+                        "stars": 3
+                    },
+                    {
+                        "name": "utikpuhlik/Jsonic",
+                        "stars": 3
+                    },
+                    {
+                        "name": "ridgerchu/gpt-neox-RWKV",
+                        "stars": 3
+                    },
+                    {
+                        "name": "andresionek91/supletivo-data-hackers-AWS-CDK",
+                        "stars": 3
+                    },
+                    {
+                        "name": "luminai-companion/koboldai-interceptor",
+                        "stars": 3
+                    },
+                    {
+                        "name": "ladukwek/ESDP-AP7-ATTRACTOR",
+                        "stars": 3
+                    },
+                    {
+                        "name": "cpcloud/ibis",
+                        "stars": 3
+                    },
+                    {
+                        "name": "MobileTeleSystems/etl-entities",
+                        "stars": 3
+                    },
+                    {
+                        "name": "wonhyeongseo/Cerence-NLP-Challenge",
+                        "stars": 3
+                    },
+                    {
+                        "name": "crunchdao/nonlinearities-multifactors-model-machine-learning",
+                        "stars": 3
+                    },
+                    {
+                        "name": "Ponte-Energy-Partners/peprock",
+                        "stars": 3
+                    },
+                    {
+                        "name": "jindaxiang/qhsdk",
+                        "stars": 3
+                    },
+                    {
+                        "name": "stopwhispering/plants-backend",
+                        "stars": 3
+                    },
+                    {
+                        "name": "Dev-Mehta/dj-greatreads",
+                        "stars": 3
+                    },
+                    {
+                        "name": "Joaopeuko/binanceSpotEasyT",
+                        "stars": 2
+                    },
+                    {
+                        "name": "TechnocultureResearch/landlog",
+                        "stars": 2
+                    },
+                    {
+                        "name": "nminaian/FlumeControl",
+                        "stars": 2
+                    },
+                    {
+                        "name": "ghga-de/auth-service",
+                        "stars": 2
+                    },
+                    {
+                        "name": "opnfv/functest-xtesting",
+                        "stars": 2
+                    },
+                    {
+                        "name": "MujyKun/IreneAPI",
+                        "stars": 2
+                    },
+                    {
+                        "name": "Vlaska/robomania",
+                        "stars": 2
+                    },
+                    {
+                        "name": "matthewdeanmartin/markpickle",
+                        "stars": 2
+                    },
+                    {
+                        "name": "ConsciousML/python-code-quality-ci",
+                        "stars": 2
+                    },
+                    {
+                        "name": "klen/muffin-peewee-aio",
+                        "stars": 2
+                    },
+                    {
+                        "name": "IEEE-NITK/corpus",
+                        "stars": 2
+                    },
+                    {
+                        "name": "Javierif/Global-AI-Bootcamp-2023",
+                        "stars": 2
+                    },
+                    {
+                        "name": "camptocamp/helm-mutualize",
+                        "stars": 2
+                    },
+                    {
+                        "name": "camptocamp/helm-monitoring",
+                        "stars": 2
+                    },
+                    {
+                        "name": "worldr/nhound",
+                        "stars": 2
+                    },
+                    {
+                        "name": "TabbyML/tabby",
+                        "stars": 2
+                    },
+                    {
+                        "name": "opendatadiscovery/odd-collector-azure",
+                        "stars": 2
+                    },
+                    {
+                        "name": "libranet/autoadd-bindir",
+                        "stars": 2
+                    },
+                    {
+                        "name": "mvshmakov/dotfiles",
+                        "stars": 2
+                    },
+                    {
+                        "name": "bpolishevsk/python-web-dev-21",
+                        "stars": 2
+                    },
+                    {
+                        "name": "zf223669/DiffmotionGG-beta",
+                        "stars": 2
+                    },
+                    {
+                        "name": "saurbhc/awsslack",
+                        "stars": 2
+                    },
+                    {
+                        "name": "ghga-de/hexkit",
+                        "stars": 2
+                    },
+                    {
+                        "name": "nspcc-dev/neofs-testlib",
+                        "stars": 2
+                    },
+                    {
+                        "name": "matthewdeanmartin/matthewdeanmartin",
+                        "stars": 2
+                    },
+                    {
+                        "name": "wdescamps/human",
+                        "stars": 2
+                    },
+                    {
+                        "name": "wallseat/MIREA_database_administration",
+                        "stars": 2
+                    },
+                    {
+                        "name": "PustakP/BookTunes",
+                        "stars": 2
+                    },
+                    {
+                        "name": "thomaswmorris/maria",
+                        "stars": 2
+                    },
+                    {
+                        "name": "DOMINATOR-XD/gptfree-telegram-bot",
+                        "stars": 2
+                    },
+                    {
+                        "name": "mkaz/oneliner",
+                        "stars": 2
+                    },
+                    {
+                        "name": "SamuelYvon/gscp",
+                        "stars": 2
+                    },
+                    {
+                        "name": "Z2PackDev/bands-inspect",
+                        "stars": 2
+                    },
+                    {
+                        "name": "SinNation/CStest",
+                        "stars": 2
+                    },
+                    {
+                        "name": "Ongoing-Knowledge-Scraping/Rock-Paper-Scissors",
+                        "stars": 2
+                    },
+                    {
+                        "name": "MohammadD3veloper/CookieCutterD3V",
+                        "stars": 2
+                    },
+                    {
+                        "name": "MoonlightGroup/anime.py",
+                        "stars": 2
+                    },
+                    {
+                        "name": "airo-ugent/airo-mono",
+                        "stars": 2
+                    },
+                    {
+                        "name": "purna135/Aesasa-test",
+                        "stars": 2
+                    },
+                    {
+                        "name": "unixorn/ha-mqtt-discoverable-cli",
+                        "stars": 2
+                    },
+                    {
+                        "name": "mrlonis/python-open-restaurant-django",
+                        "stars": 2
+                    },
+                    {
+                        "name": "Shadblade5/Arma-Bot",
+                        "stars": 2
+                    },
+                    {
+                        "name": "surajit003/DjangoERP",
+                        "stars": 2
+                    },
+                    {
+                        "name": "gurrutia/videoxt",
+                        "stars": 2
+                    },
+                    {
+                        "name": "carbon-data-specification/Power-Systems-Data-API-Demonstrator",
+                        "stars": 2
+                    },
+                    {
+                        "name": "danb27/chat-toolkit",
+                        "stars": 2
+                    },
+                    {
+                        "name": "QuakeSaver/quakesaver-client",
+                        "stars": 2
+                    },
+                    {
+                        "name": "pferrariog/aut-vale-alimentacao",
+                        "stars": 2
+                    },
+                    {
+                        "name": "rwxd/pyreadwise",
+                        "stars": 2
+                    },
+                    {
+                        "name": "darkguin/dark-utils",
+                        "stars": 2
+                    },
+                    {
+                        "name": "fengzhongzhu1621/xTool",
+                        "stars": 2
+                    },
+                    {
+                        "name": "ElixirNote/elixirext",
+                        "stars": 2
+                    },
+                    {
+                        "name": "JBercich/networkrl",
+                        "stars": 2
+                    },
+                    {
+                        "name": "pattertj/accountmanager",
+                        "stars": 2
+                    },
+                    {
+                        "name": "richardangell/tabular-trees",
+                        "stars": 2
+                    },
+                    {
+                        "name": "iScsc/RootPythia",
+                        "stars": 2
+                    },
+                    {
+                        "name": "danorel/int20-ds",
+                        "stars": 2
+                    },
+                    {
+                        "name": "olympian-21/Kaggle-Blueprints",
+                        "stars": 2
+                    },
+                    {
+                        "name": "CubeVic/My_notes",
+                        "stars": 2
+                    },
+                    {
+                        "name": "agusmdev/fastapi-ddd-template",
+                        "stars": 2
+                    },
+                    {
+                        "name": "vedantparikh/portfolia_app",
+                        "stars": 2
+                    },
+                    {
+                        "name": "sasunday26/discord-music-bot",
+                        "stars": 2
+                    },
+                    {
+                        "name": "luxteam/jobs_test_houdini",
+                        "stars": 2
+                    },
+                    {
+                        "name": "JustinGoheen/lightning-pod-vision",
+                        "stars": 2
+                    },
+                    {
+                        "name": "jvmsangkal/python-starter",
+                        "stars": 2
+                    },
+                    {
+                        "name": "nbhushan/Quasi-Deterministic-HMMs",
+                        "stars": 2
+                    },
+                    {
+                        "name": "thensel23/collaborate",
+                        "stars": 2
+                    },
+                    {
+                        "name": "getindata/flink-sql-runner",
+                        "stars": 2
+                    },
+                    {
+                        "name": "Samtheram13/spotifysaver",
+                        "stars": 2
+                    },
+                    {
+                        "name": "lllchak/nlp",
+                        "stars": 2
+                    },
+                    {
+                        "name": "RyanEricLamb/data-engineering-bus-tracker",
+                        "stars": 2
+                    },
+                    {
+                        "name": "hatlabs/SH-RPi-daemon",
+                        "stars": 2
+                    },
+                    {
+                        "name": "scaleway/serverless-functions-python",
+                        "stars": 2
+                    },
+                    {
+                        "name": "RomainBrault/python-whiteprint",
+                        "stars": 2
+                    },
+                    {
+                        "name": "bayoudhif/web-based-application-object-detection",
+                        "stars": 2
+                    },
+                    {
+                        "name": "krestovsky13/webtronics",
+                        "stars": 2
+                    },
+                    {
+                        "name": "alexeygalt/Todolist",
+                        "stars": 2
+                    },
+                    {
+                        "name": "Thomas-mcinally/stockprice",
+                        "stars": 2
+                    },
+                    {
+                        "name": "mrBlackHat777/Salary_Canada",
+                        "stars": 2
+                    },
+                    {
+                        "name": "PandasAreBears/MakkaPakka",
+                        "stars": 2
+                    },
+                    {
+                        "name": "MichaelYcCho/michael-bnb-backend",
+                        "stars": 2
+                    },
+                    {
+                        "name": "nicklasbekkevold/ssbgrid",
+                        "stars": 2
+                    }
+                ],
+                "public_dependents_number": 296,
+                "private_dependents_number": 113577,
+                "total_dependents_number": 113873,
+                "badges": {
+                    "total": "[![](https://img.shields.io/static/v1?label=Used%20by&message=113873&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS01MjQzNTQ0OQ%3D%3D)",
+                    "public": "[![](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=296&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS01MjQzNTQ0OQ%3D%3D)",
+                    "private": "[![](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=113577&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS01MjQzNTQ0OQ%3D%3D)",
+                    "stars": "[![](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=0&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS01MjQzNTQ0OQ%3D%3D)"
+                }
+            },
+            {
+                "id": "UGFja2FnZS0yMjcxMDc1OTE5",
+                "name": "github.com/pre-commit/pre-commit",
+                "url": "https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0yMjcxMDc1OTE5",
+                "public_dependent_stars": 0,
+                "public_dependents": [],
+                "public_dependents_number": 0,
+                "private_dependents_number": 0,
+                "total_dependents_number": 0,
+                "badges": {
+                    "total": "[![](https://img.shields.io/static/v1?label=Used%20by&message=0&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0yMjcxMDc1OTE5)",
+                    "public": "[![](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=0&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0yMjcxMDc1OTE5)",
+                    "private": "[![](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=0&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0yMjcxMDc1OTE5)",
+                    "stars": "[![](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=0&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0yMjcxMDc1OTE5)"
+                }
+            },
+            {
+                "id": "UGFja2FnZS0xMTI5NjIwNQ%3D%3D",
+                "name": "pre_commit_dummy_package",
+                "url": "https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0xMTI5NjIwNQ%3D%3D",
+                "public_dependent_stars": 0,
+                "public_dependents": [],
+                "public_dependents_number": 0,
+                "private_dependents_number": 0,
+                "total_dependents_number": 0,
+                "badges": {
+                    "total": "[![](https://img.shields.io/static/v1?label=Used%20by&message=0&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0xMTI5NjIwNQ%3D%3D)",
+                    "public": "[![](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=0&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0xMTI5NjIwNQ%3D%3D)",
+                    "private": "[![](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=0&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0xMTI5NjIwNQ%3D%3D)",
+                    "stars": "[![](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=0&color=informational&logo=slickpic)](https://github.com/pre-commit/pre-commit/network/dependents?package_id=UGFja2FnZS0xMTI5NjIwNQ%3D%3D)"
+                }
+            }
+        ]
+    ]
+}
