@@ -1,0 +1,21 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: pytest
+        name: pytest
+        entry: pytest tests
+        language: python
+        types: [python]
+    -   id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+        -   -sn
+        -   --extension-pkg-whitelist=pygame
+        -   --max-line-length=100
+        -   --disable=missing-module-docstring
+        -   --disable=missing-class-docstring
+        -   --disable=missing-function-docstring
+        -   --disable=too-few-public-methods

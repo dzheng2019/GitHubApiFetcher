@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      # limit the size of the upload files to 80 mb
+      - id: check-added-large-files
+        args: ["--maxkb=80000"]
+      # check for upper and lowercase conflicts filenames in case-insensitive OSes
+      - id: check-case-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: detect-private-key
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      # Python formatter
+      - id: black
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.6.0
+    hooks:
+      # JSON and other files formatter
+      - id: prettier

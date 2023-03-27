@@ -1,0 +1,20 @@
+# See https://pre-commit.com for more information
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-added-large-files
+      - id: check-json
+      - id: check-yaml
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 2.1.4
+    hooks:
+      - id: shellcheck
+  - repo: https://github.com/markdownlint/markdownlint
+    rev: v0.11.0
+    hooks:
+      - id: markdownlint
+        args: ["-r", "~MD013,~MD029,~MD002,~MD026"]
+        exclude: "{{ cookiecutter.repo_name }}/README.md"

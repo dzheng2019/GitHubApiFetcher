@@ -1,0 +1,20 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: trailing-whitespace
+        name: Trim Trailing Whitespace
+        description: This hook trims trailing whitespace.
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]
+        name: Sort python imports
+        description: This hook sorts python file imports.
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+        name: Auto-format .py files
+        description: This hook auto-formats staged python files according to pep8 standard.

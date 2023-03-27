@@ -1,0 +1,5 @@
+repos:
+-   repo: https://github.com/sauravkmr045/checkov.git
+    rev: eddf018b68489612c496a821226c43b845ba63a5
+    hooks:
+    -   id: checkov

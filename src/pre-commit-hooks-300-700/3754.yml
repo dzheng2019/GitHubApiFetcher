@@ -1,0 +1,29 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "v2.7.1"
+    hooks:
+      - id: prettier
+  - repo: local
+    hooks:
+      - id: ormolu
+        name: ormolu
+        language: system
+        entry: ./ormolu.sh
+        files: .*\.hs$
+      - id: hlint
+        name: hlint
+        language: system
+        entry: hlint --color
+        files: .*\.hs$
+      - id: hlint-refactor
+        name: hlint-refactor
+        language: system
+        entry: ./hlint-refactor.sh
+        files: .*\.hs$
+      - id: git-diff
+        name: git-diff
+        language: system
+        entry: git diff --exit-code
+        pass_filenames: false
+        always_run: true
+        files: ^$

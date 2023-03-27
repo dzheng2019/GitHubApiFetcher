@@ -2,13 +2,13 @@ import * as fs from 'fs'
 import { Octokit } from "@octokit/rest"
 
 const octokit = new Octokit({
-  auth: "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",
+  auth: "",
 })
 
 let repos = []
 let per_page = 10
-let r = 500 // started at 100, got 3k, move to 500 to see larger examples
-let gap = 5
+let r = 800 // started at 100, got 3k, move to 500 to see larger examples
+let gap = 50 // using larger range to get more complex 
 while (true) {
   let low = r
   let high = r + gap - 1
@@ -57,7 +57,7 @@ while (true) {
   }
 
   let jsonContent = JSON.stringify(repos)
-  let out_string = "./results_500/" + repos.length + ".json"
+  let out_string = "./results_800/" + repos.length + ".json"
   fs.writeFile(out_string, jsonContent, 'utf8', function (err) {
     if (err) {
       return console.log(err)
@@ -66,6 +66,7 @@ while (true) {
   })
 
   r = r + gap
+  console.log(r)
   if (repos.length > 40000) {
     console.log(r)
     break

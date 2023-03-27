@@ -1,0 +1,7 @@
+repos:
+  - repo: local
+    hooks:
+      - id: build-wasm
+        name: Build WASM
+        entry: make build-wasm
+        language: system

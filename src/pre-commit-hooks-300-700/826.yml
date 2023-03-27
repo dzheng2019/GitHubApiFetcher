@@ -1,0 +1,13 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+- repo: https://github.com/psf/black
+  rev: 'b4a6bb08fa704facbf3397f95b3216e13c3c964a'
+  hooks:
+    - id: black
+      args: [src/]
+- repo: https://github.com/pre-commit/mirrors-mypy
+  rev: 'f6f816c65d285f8a4a15e0e9965b3dd66ecddd79'
+  hooks:
+    - id: mypy
+      args: [src/]

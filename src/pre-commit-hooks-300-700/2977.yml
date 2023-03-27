@@ -1,0 +1,19 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+-   repo: https://github.com/aws-cloudformation/cfn-python-lint
+    rev: v0.53.0  # Latest cfn-lint version
+    hooks:
+    -   id: cfn-python-lint
+        files: templates/.*\.(json|yml|yaml)$
+-   repo: local
+    hooks:
+    -   id: cfn-nag
+        name: cfn-nag
+        language: docker_image
+        entry: alpine/cfn-nag:latest --input-path /src
+        files: templates/
+        pass_filenames: false

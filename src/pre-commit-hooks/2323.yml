@@ -1,0 +1,6 @@
+repos:
+-   repo: https://github.com/xbeheydt/42school-pre-commit-hooks
+    rev: v0.2.3
+    hooks:
+    -   id: check-norm
+    -   id: run-tests

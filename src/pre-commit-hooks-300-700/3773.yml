@@ -1,0 +1,24 @@
+repos:
+  - repo: local
+    hooks:
+      -   id: trailing-whitespace
+          name: trim trailing whitespace
+          description: trims trailing whitespace.
+          entry: trailing-whitespace-fixer
+          language: python
+          types: [text]
+          stages: [commit, push, manual]
+
+      -   id: isort
+          name: isort
+          stages: [commit]
+          language: system
+          entry: isort --profile black user_logins_ingestion/
+          types: [python]
+
+      -   id: black
+          name: black
+          stages: [commit]
+          language: system
+          entry: black --line-length=79 user_logins_ingestion/
+          types: [python]

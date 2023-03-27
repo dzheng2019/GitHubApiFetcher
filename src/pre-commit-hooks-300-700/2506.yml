@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/timothycrosley/isort
+    rev: 5.7.0
+    hooks:
+      - id: isort
+        types: [python]
+        args: ["--profile", "black"]
+  - repo: https://github.com/ambv/black
+    rev: 20.8b1
+    hooks:
+      - id: black
+        types: [python]
+        args: ["-l", "120"]
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+      - id: mypy
+        name: mypy
+        entry: mypy
+        language: system
+        types: [python]

@@ -1,0 +1,17 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0  # Use the ref you want to point at
+    hooks:
+      - id: trailing-whitespace
+      - id: check-executables-have-shebangs
+      - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
+      - id: check-symlinks
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args:
+          - --fix=no
+  - repo: https://github.com/pre-commit/pre-commit
+    rev: v2.14.1
+    hooks:
+      - id: validate_manifest

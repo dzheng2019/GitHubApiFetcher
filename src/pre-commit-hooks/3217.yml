@@ -1,0 +1,6 @@
+repos:
+  - repo: https://github.com/sabosan/pdk_test_unit_pre_commit.git
+    sha:
+    hooks:
+      - id: pdk_test_unit_pre_commit
+        files: \.(pp|rb)$

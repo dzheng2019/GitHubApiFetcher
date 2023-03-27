@@ -1,0 +1,18 @@
+
+repos:
+  - hooks:
+      - id: terraform_fmt
+      - id: terraform_validate
+      - id: terraform_docs
+      - id: terraform_tflint
+        args:
+          - --args=--init
+      - id: terraform_tflint
+        args:
+          - --args=--config=__GIT_WORKING_DIR__/.tflint.hcl
+      - id: checkov
+        args: [
+          "-d", "."
+        ]
+    repo: https://github.com/antonbabenko/pre-commit-terraform.git
+    rev: v1.52.0

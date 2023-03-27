@@ -1,0 +1,21 @@
+repos:
+
+- repo: local
+  hooks:
+    - id: linters
+      name: linters
+      entry: ./scripts/run_linters
+      language: python
+      types: [ python ]
+
+    - id: tests
+      name: tests
+      entry: ./scripts/run_tests
+      language: python
+      types: [ python ]
+
+    - id: format
+      name: format
+      entry: ./scripts/run_formatters
+      language: python
+      types: [ python ]

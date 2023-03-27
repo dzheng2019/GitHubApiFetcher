@@ -1,0 +1,15 @@
+---
+# To enable this:
+# pip install pre-commit
+# pre-commit install
+# See:
+#   https://docs.ansible.com/ansible-lint/configuring/configuring.html#pre-commit-setup
+#   https://pre-commit.com/#install
+- repo: https://github.com/ansible/ansible-lint.git
+  rev: v4.0.1
+  hooks:
+    - id: ansible-lint
+      args: [-x '204']
+      verbose: true
+      files: \.ya?ml$
+      exclude: vault([a-zA-Z0-9_]*)\.ya?ml$

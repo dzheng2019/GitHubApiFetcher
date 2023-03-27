@@ -1,0 +1,7 @@
+---
+repos:
+  - repo: https://github.com/rhysd/actionlint.git
+    rev: v1.6.8
+    hooks:
+      - id: actionlint-docker
+        name: actionlint

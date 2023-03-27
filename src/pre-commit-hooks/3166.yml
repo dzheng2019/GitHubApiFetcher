@@ -1,0 +1,7 @@
+repos:
+  - repo: https://github.com/answ9/geekbrains_golang_backend_level_1
+
+    rev: v1.0.2
+    hooks:
+      - id: golangci-lint
+      - id: go-unit-tests

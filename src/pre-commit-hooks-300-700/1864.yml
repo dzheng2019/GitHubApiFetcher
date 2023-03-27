@@ -1,0 +1,19 @@
+#repos:
+#- repo: https://github.com/fastai/nbdev
+#  rev: 2.2.10
+#  hooks:
+#  - id: nbdev_clean
+#  - id: nbdev_export
+
+## pre-commit hook to run the nbdev_clean that is in this project
+## location is /Users/tom/opt/anaconda3/envs/basemod/bin/nbdev_clean
+#repos:
+#- repo: local
+#  hooks:
+#  - id: nbdev_clean
+#    name: nbdev_clean
+#    entry: nbdev_clean
+#    path: /Users/tom/opt/anaconda3/envs/basemod/bin/nbdev_clean
+#    language: system
+#    always_run: true
+#    pass_filenames: false

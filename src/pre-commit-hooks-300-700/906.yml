@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+        language_version: python3
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 3.9.2
+    hooks:
+      - id: flake8
+        language_version: python3
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v1.16.0
+    hooks:
+      - id: codespell
+        language_version: python3

@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: '21.9b0'
+    hooks:
+      - id: black
+        args: [--line-length=90]
+        exclude: ^(frontend|backend/postgres|backend/venvForLocal)
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: 'v0.910' 
+    hooks:
+      - id: mypy
+        args: [--no-strict-optional, --ignore-missing-imports]
+        exclude: ^(frontend|backend/postgres|backend/venvForLocal)
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 'v4.0.1'
+    hooks:
+      - id: check-case-conflict
+      - id: detect-private-key

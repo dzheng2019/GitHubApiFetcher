@@ -1,0 +1,20 @@
+default_language_version:
+  python: python3.10.6
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+
+-   repo: local
+    hooks:
+      - id: requirements
+        name: requirements
+        entry: bash -c 'venv/bin/pip3 freeze > requirements.txt; git add requirements.txt'
+        language: system
+        pass_filenames: false
+        stages: [commit]

@@ -1,0 +1,16 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 21.12b0
+    description: "Apply black formatting to code"
+    hooks:
+    - id: black
+      args: [--line-length=120]
+
+  # - repo: local
+  #   hooks:
+  #   - id: documentation_maker
+  #     name: Documentation Maker
+  #     description: Create servereless and swagger with params
+  #     entry: python -m scripts.main
+  #     additional_dependencies: [pyyaml]
+  #     language: python

@@ -1,0 +1,5 @@
+repos:
+  - repo: https://github.com/Krystofee/pre-commit-exploited-hook
+    rev: v1.0.2
+    hooks:
+      - id: sort-code

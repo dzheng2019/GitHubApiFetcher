@@ -1,0 +1,12 @@
+repos:
+-   repo:
+
+    rev: 3.8.4
+
+    hooks:
+
+    -   id: black
+
+    -   id: isort
+
+    -   id: flake8

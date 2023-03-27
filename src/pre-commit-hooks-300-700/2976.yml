@@ -1,0 +1,19 @@
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: v0.7.1
+    hooks:
+    -   id: check-added-large-files
+        args:
+        - --maxkb=25
+    -   id: check-merge-conflict
+    -   id: detect-aws-credentials
+    -   id: detect-private-key
+    -   id: check-json
+    -   id: check-yaml
+-   repo: git://github.com/bjbishop/commit_tally
+    sha: 2bec21872b23ab60ef110ef2a36c5825b994f444
+    hooks:
+    -   id: commit_tally
+-   repo: git://github.com/bjbishop/git-secrets
+    sha: 1ce858a23757126c3517b253be363e3390014a7c
+    hooks:
+    -   id: git-secrets

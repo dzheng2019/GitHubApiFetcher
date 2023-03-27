@@ -1,0 +1,13 @@
+repos:
+-   repo: https://github.com/nicklockwood/SwiftFormat
+    rev: 0.49.9
+    hooks:
+    -   id: swiftformat
+-   repo: local
+    hooks:
+    -   id: xcodetests
+        always_run: true
+        pass_filenames: false
+        name: xcodetests
+        entry: xcodebuild -project Lucify.xcodeproj -scheme LucifyTests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 12,OS=15.4" test
+        language: system

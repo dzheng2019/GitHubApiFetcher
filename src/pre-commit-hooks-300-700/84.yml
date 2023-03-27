@@ -1,0 +1,9 @@
+# export python requirements
+- repo: https://github.com/starPolar/pdm-test
+  rev: 2.x.y # a PDM release exposing the hook
+  # rev: v1.0.1 # a PDM release exposing the hook
+  hooks:
+    - id: pdm-export
+      # command arguments, e.g.:
+      args: ['-o', 'requirements.txt', '--without-hashes']
+      files: ^pdm.lock$

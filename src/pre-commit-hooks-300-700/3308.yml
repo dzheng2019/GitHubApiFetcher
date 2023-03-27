@@ -1,0 +1,24 @@
+repos:
+    -
+        repo: local
+        hooks:
+            -
+                id: helper
+                name: Helper
+                always_run: true
+                entry: ./documentation/helper.sh
+                language: script
+
+    -
+        repo: https://github.com/terraform-docs/terraform-docs
+        rev: "v0.16.0"
+        hooks:
+            -
+                id: terraform-docs-go
+                name: Terraform Documentation
+                always_run: true
+                entry: terraform-docs
+                args:
+                    - --config
+                    - ./documentation/generation.yaml
+                    - .

@@ -1,0 +1,14 @@
+default_stages: [commit]
+fail_fast: true
+repos:
+  -   repo: git@github.com:alanb-2/scala-pre-commit-hooks
+      rev: ad64f19
+      hooks:
+        -   id: sbt-fatal-warnings
+            args: [--scope=test:compile]
+        -   id: sbt-scalafmt
+            args: [--task=scalafmt]
+        -   id: sbt-scalafmt
+            args: [ --task=scalafmtSbt ]
+        -   id: sbt-wartremover
+            args: [--warts=Warts.unsafe, --scope=test:compile]

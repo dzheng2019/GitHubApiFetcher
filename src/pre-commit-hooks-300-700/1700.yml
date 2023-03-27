@@ -1,0 +1,15 @@
+repos:
+    -   repo: local
+        hooks:
+        #Use dotnet format already installed on your machine
+        -   id: dotnet-format
+            name: dotnet-format
+            language: system 
+            entry: dotnet format --include 
+            types_or: ["c#", "vb"]
+    -   repo: https://github.com/Yelp/detect-secrets
+        rev: v1.3.0
+        hooks:
+        -   id: detect-secrets
+            args: ['--baseline', '.secrets.baseline']
+            exclude: ^test/api.tests/

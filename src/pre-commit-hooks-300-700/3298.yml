@@ -1,0 +1,27 @@
+# Git Guardian
+repos:
+  - repo: https://github.com/gitguardian/ggshield
+    rev: v1.13.0
+    hooks:
+      - id: ggshield
+        language_version: python3
+        stages: [commit]
+
+# Check .yaml
+  - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+    rev: 0.2.1  # or other specific tag
+    hooks:
+      - id: yamlfmt
+        args: [--mapping, '2', --sequence, '2', --offset, '0']
+
+# Forbid tabs
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.3.0
+    hooks:
+      - id: remove-tabs
+
+# GO linter
+  - repo: https://github.com/golangci/golangci-lint
+    rev: v1.47.3
+    hooks:
+      - id: golangci-lint

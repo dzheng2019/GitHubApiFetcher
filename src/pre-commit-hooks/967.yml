@@ -1,0 +1,6 @@
+repos:
+-   repo: https://github.com/PyCQA/flake8
+    rev: master
+    hooks:
+    -   id: flake8
+        #exclude: ^tests/

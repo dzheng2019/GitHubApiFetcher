@@ -1,0 +1,4 @@
+-   repo: git://github.com/pre-commit/mirrors-jshint
+    sha: ''  # Use the sha you want to point at
+    hooks:
+    -   id: jshint

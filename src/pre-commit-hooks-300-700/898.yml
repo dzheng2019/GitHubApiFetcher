@@ -1,0 +1,13 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.1.0
+    hooks:
+    -   id: check-merge-conflict
+    -   id: check-toml
+    -   id: trailing-whitespace
+  - repo: https://github.com/doublify/pre-commit-rust
+    rev: c9d5fe3776c92519e0b7eb9175fb56400f2a518f
+    hooks:
+    -   id: fmt
+    -   id: cargo-check
+    -   id: clippy

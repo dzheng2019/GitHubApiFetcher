@@ -1,0 +1,20 @@
+repos:
+	#代码格式化
+-   repo: https://github.com/python/black
+    rev: 22.1.0
+    hooks:
+    - id: black
+      language_version: python3.9
+-   repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        args: ["--profile", "black", "--filter-files"]
+    #对json文件内容进行格式化
+-   repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.5.1
+    hooks:
+      - id: prettier
+        files: ^mark_data/
+        types: [json]
+        args: ["--print-width", "12"]

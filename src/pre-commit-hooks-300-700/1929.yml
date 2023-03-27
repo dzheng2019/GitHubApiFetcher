@@ -1,0 +1,21 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: clippy
+        name: clippy
+        entry: cargo clippy
+        language: system
+        args: ["--", "-D", "warnings"]
+        pass_filenames: false
+    -   id: fmt
+        name: fmt
+        entry: cargo fmt
+        language: system
+        types: [rust]
+        args: ["--"]
+    -   id: tests
+        name: tests
+        entry: cargo test
+        language: system
+        args: ["--", "--test-threads=1"]
+        pass_filenames: false

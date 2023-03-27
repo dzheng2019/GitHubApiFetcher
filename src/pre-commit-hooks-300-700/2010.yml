@@ -1,0 +1,14 @@
+repos:
+- repo: git://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.48.0 # from https://github.com/antonbabenko/pre-commit-terraform/releases
+  hooks:
+    - id: terraform_fmt
+    - id: terraform_validate
+    - id: checkov
+    - id: terraform_tflint
+      args:
+        - '--args=--config=__GIT_WORKING_DIR__/.tflint.hcl'
+    - id: terraform_tfsec
+      args:
+        - '--args=--exclude-downloaded-modules --tfvars-file terraform.tfvars'
+    - id: terraform_docs

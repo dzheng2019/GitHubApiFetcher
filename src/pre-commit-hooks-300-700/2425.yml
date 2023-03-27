@@ -1,0 +1,27 @@
+---
+repos:
+  - repo: local
+    hooks:
+      - id: format
+        name: check format
+        entry: make check-format
+        language: system
+        always_run: false
+        verbose: false
+        pass_filenames: false
+        stages:
+          - commit
+        types:
+          - go
+      - id: go test
+        name: go test
+        entry: go test -race ./...
+        language: system
+        always_run: false
+        verbose: false
+        pass_filenames: false
+        stages:
+          - commit
+        types:
+          - go
+fail_fast: true

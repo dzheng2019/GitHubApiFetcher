@@ -1,0 +1,17 @@
+repos:
+-   repo: local
+    hooks:
+
+    -   id: black
+        name: black
+        stages: [commit]
+        language: system
+        entry: poetry run black --target-version py310 .
+        types: [python]
+
+    -   id: flake8
+        name: flake8
+        stages: [commit]
+        language: system
+        entry: poetry run flake8 --max-line-length 88 --select=C,E,F,W,B,B950 --extend-ignore=E203,E501
+        types: [python]

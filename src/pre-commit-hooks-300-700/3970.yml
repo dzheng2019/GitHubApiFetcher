@@ -1,0 +1,25 @@
+repos:
+- repo: https://github.com/PyCQA/pylint
+  rev: v2.8.2
+  hooks:
+  - id: pylint
+    name: pylint
+    language: system
+    types: [python]
+    entry: pylint
+    verbose: true
+    exclude: "^.*/migrations/.*$"
+    args: ["--django-settings-module=mysterio.settings.local", "--disable=W0511"]
+
+- repo: https://github.com/psf/black
+  rev: 21.5b1
+  hooks:
+  - id: black
+
+- repo: https://github.com/pre-commit/mirrors-eslint
+  rev: v7.26.0
+  hooks:
+  - id: eslint
+    verbose: true
+    entry: npm run --silent --prefix frontend precommit-lint
+    args: ["--", "--max-warnings=0", "--rule", "no-console:0", "--files"] # --files arg indicate start of filenames

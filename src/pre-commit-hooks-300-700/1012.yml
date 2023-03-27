@@ -1,0 +1,16 @@
+repos:
+- repo: https://github.com/gruntwork-io/pre-commit
+  rev: 'v0.1.17'
+  hooks:
+    - id: terraform-validate
+      args: [
+         "./plan_scanning"
+       ]
+# - repo: https://github.com/antonbabenko/pre-commit-terraform
+#   rev: 'v1.62.3'
+#   hooks:
+#     - id: checkov
+#       args: [
+#         "-d", "plan_scanning",
+#         "--external-checks-dir", "policies",
+#       ]

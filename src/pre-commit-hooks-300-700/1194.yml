@@ -1,0 +1,27 @@
+---
+
+# .pre-commit-config.yaml
+# ========================
+#
+# pre-commit clean
+# pre-commit install
+# pre-commit install-hooks
+#
+# precommit hooks installation
+#
+# - pre-commit autoupdate
+#
+# - pre-commit run black
+#
+# continuous integration
+# ======================
+#
+# - pre-commit run --all-files
+#
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+    - id: check-json
+   

@@ -1,0 +1,7 @@
+repos:
+  - repo: local
+    hooks: 
+    - id: format_all
+      name: Run terragrunt hclfmt
+      language: system
+      entry: terragrunt hclfmt

@@ -1,0 +1,6 @@
+default_stages: [push]
+repos:
+  - repo: git@github.com:tmnewa-ddc/pre-commit.git
+    rev: v1.0.3
+    hooks:
+      - id: python-unit-tests

@@ -1,0 +1,16 @@
+repos:
+-   repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+       - id: black
+         language_version: python
+
+{% if cookiecutter.use_gjira == "y" %}
+-   repo: https://github.com/benmezger/gjira
+    rev: master
+    hooks:
+      - id: gjira
+        args: ["--board={{ cookiecutter.gjira_board_name }}", '--regex={{ cookiecutter.gjira_issue_regex }}', "--template=.github/COMMIT_TEMPLATE"]
+      - id: gjira-check-branch
+        args: ["--regex={{ cookiecutter.gjira_branch_regex }}"]
+{% endif %}

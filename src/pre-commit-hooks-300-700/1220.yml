@@ -1,0 +1,21 @@
+repos:
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+    -   id: isort
+        name: isort
+        stages: [commit]
+        language: python
+        entry: isort
+        types: [python]
+-   repo: https://github.com/PyCQA/flake8
+    rev: 5.0.4
+    hooks:
+    -   id: flake8
+        name: flake8
+        entry: flake8
+        language: python
+        types: [python]
+        require_serial: true
+
+exclude: 'README.md'

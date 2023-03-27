@@ -1,0 +1,13 @@
+repos:
+-   repo: https://github.com/psf/black
+    rev: stable
+    hooks:
+    - id: black
+      language_version: python3.10
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v1.2.3
+    hooks:
+    - id: flake8
+      args: # arguments to configure flake8
+      # making isort line length compatible with black
+        - "--max-line-length=88"

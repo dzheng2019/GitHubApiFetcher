@@ -1,0 +1,19 @@
+repos:
+- repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.62.3  # v1.62.3
+  hooks:
+    - id: terraform_tfsec
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.1.0  # v4.1.0
+  hooks:
+    - id: detect-aws-credentials
+    - id: detect-private-key
+    - id: end-of-file-fixer
+
+- repo: https://github.com/gruntwork-io/pre-commit
+  rev: v0.1.17
+  hooks:
+    - id: terraform-fmt
+    - id: terragrunt-hclfmt
+    - id: tflint

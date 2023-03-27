@@ -1,0 +1,7 @@
+-   repo: local
+    hooks:
+    -   id: lint
+        name: rubocop
+        entry: rubocop
+        files: (^app|^lib)
+        language: system

@@ -1,0 +1,30 @@
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        entry: make black
+        language: system
+        types: [python]
+        always_run: true
+        stages: [commit]
+        require_serial: true
+
+      - id: flake8
+        name: flake8
+        entry: make flake8-check
+        language: system
+        types: [ python ]
+        always_run: true
+        stages: [ commit ]
+        require_serial: true
+
+      - id: integration-test
+        name: integration-test
+        entry: make integration-test
+        pass_filenames: false
+        language: system
+        types: [ python ]
+        always_run: true
+        stages: [ push ]
+        require_serial: true

@@ -1,0 +1,6 @@
+---
+repos:
+  - repo: https://github.com/sungho-cho/gym-janggi
+    rev: 0.0.1
+    hooks:
+      - id: sungho-cho

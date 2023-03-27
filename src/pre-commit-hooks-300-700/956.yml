@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: trailing-whitespace
+  - repo: local
+    hooks:
+      - id: swagger_validate
+        name: Swagger API definition validate
+        entry: swagger validate
+        language: python_venv
+        files: ^swagger\.yaml$

@@ -1,0 +1,21 @@
+repos:
+  - repo: https://github.com/zricethezav/gitleaks
+    rev: v8.2.0
+    hooks:
+      - id: gitleaks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: fix-byte-order-marker
+      - id: mixed-line-ending
+      - id: end-of-file-fixer
+      - id: detect-private-key
+      - id: check-yaml
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
+      - id: check-json
+      - id: check-executables-have-shebangs
+      - id: check-case-conflict
+      - id: check-added-large-files

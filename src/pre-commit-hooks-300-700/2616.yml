@@ -1,0 +1,17 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    -   id: end-of-file-fixer
+        description: empty line at the end of each file.
+    -   id: check-case-conflict
+        description: windows file system safe file names.
+    -   id: fix-byte-order-marker
+        description: no byte order markers.
+    -   id: trailing-whitespace
+        description: no trailing whitespace.
+    -   id: check-added-large-files
+        description: no giant files.
+    -   id: mixed-line-ending
+        args: ['--fix=lf']
+        description: UNIX line endings.

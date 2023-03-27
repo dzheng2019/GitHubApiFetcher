@@ -1,0 +1,7 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: print
+        name: print
+        entry: python check-docs-version.py
+        language: system

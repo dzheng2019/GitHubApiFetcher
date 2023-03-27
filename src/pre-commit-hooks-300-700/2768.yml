@@ -1,0 +1,17 @@
+exclude: '(\.eggs|\.git|\.hg|\.mypy_cache|\.pytest_cache|\.tox|\.venv|venv|.env|env|\.vscode|static|media/|deployments|scripts|requirements|.*/templates|.*/migrations)'
+
+repos:
+    - repo: https://github.com/pycqa/isort
+      rev: 5.9.3
+      hooks:
+          - id: isort
+            args: ["--profile", "black", "--filter-files"]
+    - repo: https://github.com/ambv/black
+      rev: 21.9b0
+      hooks:
+          - id: black
+            language_version: python3.8
+    - repo: https://gitlab.com/pycqa/flake8
+      rev: 3.9.2
+      hooks:
+          - id: flake8

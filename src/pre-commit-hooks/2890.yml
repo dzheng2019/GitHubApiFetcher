@@ -1,0 +1,6 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: master
+    hooks:
+      - id: eslint
+        files: packages\/octave\/.*\.jsx?$

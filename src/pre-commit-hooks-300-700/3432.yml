@@ -1,0 +1,24 @@
+%YAML 1.2
+---
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+  - id: check-added-large-files
+  - id: check-case-conflict
+  - id: check-docstring-first
+  - id: check-json
+  - id: check-yaml
+  - id: check-merge-conflict
+  - id: detect-private-key
+  # - id: no-commit-to-branch
+  #   args: [--branch, master]
+- repo: https://github.com/ambv/black
+  rev: 21.7b0
+  hooks:
+  - id: black
+    language_version: python3.8

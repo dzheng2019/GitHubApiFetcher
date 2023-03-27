@@ -1,0 +1,18 @@
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v3.4.0
+      hooks:
+          - id: trailing-whitespace
+          - id: end-of-file-fixer
+          - id: check-case-conflict
+          - id: check-byte-order-marker
+          - id: check-yaml
+          - id: check-added-large-files
+          - id: check-executables-have-shebangs
+          - id: check-merge-conflict
+          - id: mixed-line-ending
+            args: [--fix, lf]
+    - repo: https://github.com/pre-commit/mirrors-prettier.git
+      rev: v2.2.1
+      hooks:
+          - id: prettier

@@ -1,0 +1,23 @@
+default_language_versions:
+  python: python3
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: forbid-new-submodules
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 2.1.5
+    hooks:
+      - id: markdownlint
+      - id: rubocop
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
+    rev: v1.1.1
+    hooks:
+      - id: dockerfile_lint
+  - repo: https://github.com/IamTheFij/docker-pre-commit
+    rev: v2.0.1
+    hooks:
+      - id: hadolint

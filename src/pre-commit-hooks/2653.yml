@@ -1,0 +1,5 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "8e0d199f4004a7f226ed7974fc3883d9c702bded"
+    hooks:
+      - id: prettier

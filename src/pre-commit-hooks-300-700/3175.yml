@@ -1,0 +1,24 @@
+fail_fast: true
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.1.0 # Use the ref you want to point at
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/psf/black
+    rev: 19.3b0
+    hooks:
+      - id: black
+  - repo: https://github.com/asottile/blacken-docs
+    rev: v1.7.0
+    hooks:
+      - id: blacken-docs
+        additional_dependencies: [black==19.3b0]
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.780
+    hooks:
+      - id: mypy
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: ""
+    hooks:
+      - id: isort

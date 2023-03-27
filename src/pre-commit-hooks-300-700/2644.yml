@@ -1,0 +1,13 @@
+repos:
+-   repo: https://github.com/hmrc/security-git-hooks
+    rev: release/1.9.0
+    hooks:
+    -   id: secrets_filecontent
+        files: ''
+        language: python
+        pass_filenames: true
+        exclude: ".tar$|.gz$|.jar$|.7z$|.rar$|.bz2$|.zip$|.gzip$|.war$|.ear$|.xlsx$|.xls$|
+                |.docx$|.doc$|.pptx$|.pdf$|.jpg$|.png$|.jpeg$|.tif$|.tiff$|.gif$|.bmp$|.webp$|.svg$|.ico$|.psd$|.exe$|.dll$|.dmg$|.de$|.rpm$|kitchen.yml"
+    -   id: hooks_version_check
+        name: Checking local hooks against latest release
+        verbose: true

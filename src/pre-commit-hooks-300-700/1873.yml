@@ -1,0 +1,22 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: flake8
+        name: flake8
+        language: system
+        types: [python]
+        entry: poetry run flake8
+
+    -   id: black
+        name: black
+        language: system
+        types: [python]
+        entry: poetry run black
+        require_serial: true
+
+    -   id: isort
+        name: isort
+        language: system
+        types: [python]
+        entry: poetry run isort
+        require_serial: true

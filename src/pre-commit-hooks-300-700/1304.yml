@@ -1,0 +1,17 @@
+- repo: git://github.com/dnephin/pre-commit-golang
+  rev: v0.3.5
+  #sha: 6982e808a164d11713fd3752f48418b331a60a24
+  hooks:
+    - id: go-fmt
+    #- id: go-vet
+    #- id: go-lint
+    - id: go-imports
+    #- id: go-cyclo
+    #  args: [-over=15]
+    #- id: validate-toml
+    #- id: no-go-testing
+    #- id: gometalinter
+    - id: golangci-lint
+    #- id: go-critic
+    #- id: go-unit-tests
+    #- id: go-build

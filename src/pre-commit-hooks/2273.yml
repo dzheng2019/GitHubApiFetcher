@@ -1,0 +1,5 @@
+- repo: git@github.comcast.com:reactor-reid/terraform-pre-commit.git
+  rev: master
+  hooks:
+  - id: terraform_fmt
+  - id: terraform_validate

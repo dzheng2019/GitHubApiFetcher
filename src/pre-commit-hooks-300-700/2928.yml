@@ -1,0 +1,29 @@
+# Install pre-commit hooks via
+# pre-commit install
+
+exclude: >
+    (?x)^(
+      \.vscode/settings\.json|
+      docs/.*html
+    )$
+
+repos:
+
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v2.2.3
+    hooks:
+    - id: check-json
+    - id: check-yaml
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+
+  - repo: https://github.com/IamTheFij/docker-pre-commit
+    rev: v2.0.0
+    hooks:
+    - id: docker-compose-check
+
+  - repo: https://github.com/ansible/ansible-lint.git
+    rev: v4.2.0
+    hooks:
+      - id: ansible-lint
+        files: \.(yaml|yml)$

@@ -1,0 +1,6 @@
+repos:
+- repo: https://github.com/detailyang/pre-commit-shell
+  rev: v1.0.6
+  hooks:
+  - id: shell-lint
+    args: ['-a', '-x', '-S', 'style']

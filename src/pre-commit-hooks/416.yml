@@ -1,0 +1,5 @@
+repos:
+- repo: git://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.25.0
+  hooks:
+    - id: terragrunt_fmt

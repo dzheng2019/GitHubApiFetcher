@@ -1,0 +1,25 @@
+repos:
+ - repo: local
+   hooks:
+    - id: Black
+      name: Formatting in Project
+      entry: black
+      args: ["--check", "--diff"]
+      language: system
+      types: [python]
+
+
+    - id: Pylint
+      name: Linting in Project
+      entry: pylint
+      args: [--rcfile=.pylintrc, --output-format=colorized, --reports=n, --fail-under=9, src]
+      language: system
+      types: [python]
+
+    - id: Pytest
+      name: Testing in Project
+      entry: pytest
+      args: ["--cov=src", "--cov-report=term-missing", "--cov-report=html", "--cov-fail-under=90"]
+      language: system
+      files: test_*.py
+      types: [python]

@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-json
+        exclude: ^\.vscode\/.*$
+      - id: check-yaml
+      - id: check-merge-conflict
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 2.1.6
+    hooks:
+    - id: shellcheck
+    - id: script-must-have-extension
+      name: Local policy is to use .sh extension for shell scripts
+      types: [shell, non-executable]
+    - id: script-must-not-have-extension
+      name: Local policy is to use .sh extension for shell scripts
+      types: [shell, executable]

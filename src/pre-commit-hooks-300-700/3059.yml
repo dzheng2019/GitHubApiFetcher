@@ -1,0 +1,26 @@
+repos:
+  - repo: https://github.com/ambv/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.29.0
+    hooks:
+      - id: yamllint
+
+  # Pylint must be run from a *local* hook because it performs
+  # dynamic analysis that won't work when running from the isolated
+  # virtual environment that pre-commit uses by default.
+  #
+  # See https://github.com/pre-commit/pre-commit-hooks/issues/157
+  # for details.
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types:
+          - python
+        require_serial: true

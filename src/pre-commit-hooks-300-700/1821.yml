@@ -1,0 +1,17 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/hadolint/hadolint
+    rev: 47e3022493cb0d51e5af21ee346d4b25bc02bfcd # v2.10.0
+    hooks:
+      - id: hadolint-docker
+
+  - repo: https://github.com/jorisroovers/gitlint
+    rev: 4d96698f756df4f9f510de95099d987cd7182de2 # v0.17.0
+    hooks:
+      - id: gitlint

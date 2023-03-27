@@ -1,0 +1,18 @@
+repos:
+  # ... Other non local commits
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        stages: [commit]
+        language: system
+        entry: pytest
+        types: [python]
+
+      - id: pytest-cov
+        name: pytest
+        stages: [push]
+        language: system
+        entry: pytest --cov --cov-fail-under=70
+        types: [python]
+        pass_filenames: false

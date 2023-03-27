@@ -1,0 +1,18 @@
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v2.4.0
+      hooks:
+          - id: trailing-whitespace
+          - id: end-of-file-fixer
+          - id: check-toml
+    - repo: https://github.com/pre-commit/pygrep-hooks
+      rev: v1.5.1
+      hooks:
+          - id: python-use-type-annotations
+    - repo: local
+      hooks:
+          - id: black
+            name: formatting::black
+            entry: poetry run black --target-version py310
+            language: system
+            types: [python]

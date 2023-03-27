@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 19.3b0
+    hooks:
+      - id: black
+  - repo: https://github.com/timothycrosley/isort
+    rev: 4.3.21
+    hooks:
+      - id: isort
+  - repo: https://github.com/dfm/black_nbconvert.git
+    rev: v0.2.0
+    hooks:
+      - id: black_nbconvert
+        files: .*.ipynb$

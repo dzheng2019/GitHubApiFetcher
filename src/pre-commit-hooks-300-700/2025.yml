@@ -1,0 +1,20 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v1.4.0
+    hooks:
+    - id: check-added-large-files
+- repo: https://github.com/psf/black
+  rev: 22.3.0
+  hooks:
+    - id: black
+      args: ["--check"]
+      language_version: python3.10
+- repo: https://github.com/pycqa/isort
+  rev: 5.6.4
+  hooks:
+    - id: isort
+      args: ["--profile", "black", "--check"]
+-   repo: https://github.com/pycqa/flake8
+    rev: 5.0.4
+    hooks:
+    -   id: flake8

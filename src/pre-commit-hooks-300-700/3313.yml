@@ -1,0 +1,32 @@
+repos:
+- repo: local
+  hooks:
+  - id: autoflake
+    name: autoflake
+    entry: autoflake
+    language: python
+    files: \.py$
+    exclude: (__init__.py)
+    args: ['--in-place', '--remove-all-unused-imports']
+    additional_dependencies: ["autoflake"]
+
+  - id: isort
+    name: isort
+    entry: isort
+    language: python
+    files: \.py$
+    additional_dependencies: ["isort", "toml"]
+
+  - id: black
+    name: black
+    entry: black
+    language: python
+    files: \.py$
+    additional_dependencies: ["black"]
+
+  - id: go-fmt
+    name: 'go fmt'
+    entry: go fmt
+    files: '\.go$'
+    exclude: ^qstore/vendor/
+    language: 'system'

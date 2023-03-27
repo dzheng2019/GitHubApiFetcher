@@ -1,0 +1,19 @@
+default_language_version:
+  python: python3.8
+repos:
+- repo: https://github.com/psf/black
+  rev: 22.3.0
+  hooks:
+  - id: black
+    args: ["-l", "119", "-t", "py38"]
+    require_serial: true
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.3.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+  - id: debug-statements
+- repo: https://github.com/casey-williams-rh/pipenv-pre-commit
+  rev: v1.1.0
+  hooks:
+  - id: pipenv-generate-requirements

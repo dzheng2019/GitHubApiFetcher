@@ -1,0 +1,11 @@
+repos:
+  - repo: local
+    hooks:
+      - id: info
+        name: "Create: info files"
+        description: Create arguments to be parsed (value if argument could expect a value) and completion arguments
+        entry: bin/pre-commit.sh
+        language: system
+        stages:
+          - commit
+        pass_filenames: false

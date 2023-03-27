@@ -1,0 +1,14 @@
+repos:
+-   repo: local
+    hooks:
+      - id: hadolint-docker
+        name: Lint Dockerfiles
+        description: Runs hadolint Docker image to lint Dockerfiles
+        language: docker_image
+        types: ["dockerfile"]
+        entry: hadolint/hadolint:v2.8.0 hadolint
+
+- repo: https://github.com/igorshubovych/markdownlint-cli
+  rev: v0.31.1
+  hooks:
+  - id: markdownlint

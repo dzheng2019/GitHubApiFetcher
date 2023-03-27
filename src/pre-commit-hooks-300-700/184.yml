@@ -1,0 +1,13 @@
+repos:
+-  repo: https://github.com/grizzly-monkey/chef-laughing-octo.git
+   sha: 'v1.0'
+   hooks:
+    - id: check-foodcritic
+-  repo: https://github.com/pre-commit/pre-commit-hooks
+   sha: v2.0.0
+   hooks:
+   -   id: trailing-whitespace
+   -   id: end-of-file-fixer
+   -   id: check-json
+   -   id: check-yaml
+   - id: requirements-txt-fixer

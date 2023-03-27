@@ -1,0 +1,7 @@
+- repo: local
+  hooks:
+  - id: check-eslint
+    name: check-eslint
+    entry: eslint
+    language: system
+    files: \.(js)$

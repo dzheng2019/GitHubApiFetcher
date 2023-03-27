@@ -1,0 +1,5 @@
+- repo: https://github.com/sum41k/pre-commit-hooks-custom.git
+  rev: v0.0.7
+  hooks:
+  - id: terraform_tflint
+  - id: terraform_docs

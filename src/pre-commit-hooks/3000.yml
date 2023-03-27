@@ -1,0 +1,5 @@
+repos:
+-   repo: git@bitbucket.org:dttmultimedia/githooks.git
+    rev: 20ac7f413033322a6ad93f77995f03222631e47b
+    hooks:
+    -   id: commit-message-check

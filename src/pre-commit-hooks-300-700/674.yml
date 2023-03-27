@@ -1,0 +1,14 @@
+repos:
+- repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+  rev: v2.4.0
+  hooks:
+  - id: pretty-format-yaml
+    args: [--autofix, --indent, '2']
+
+- repo: https://github.com/executablebooks/mdformat
+  rev: 0.7.16  # Use the ref you want to point at
+  hooks:
+  - id: mdformat
+    additional_dependencies:
+    - mdformat-gfm
+    - mdformat-black

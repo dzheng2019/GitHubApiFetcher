@@ -1,0 +1,30 @@
+repos:
+  - repo: https://github.com/asottile/reorder_python_imports
+    rev: v3.9.0
+    hooks:
+      - id: reorder-python-imports
+
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.0.0
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          - types-frozendict
+          - types-requests
+          - types-PyYAML
+        args: [--python-version=3.11]
+
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: v1.1.2
+    hooks:
+      - id: reuse

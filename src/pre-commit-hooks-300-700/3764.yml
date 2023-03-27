@@ -1,0 +1,28 @@
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: "black"
+        entry: sh -c "black src"
+        language: system
+
+      - id: flake8
+        name: "linting - flake8"
+        entry: sh -c "flake8 --config .flake8.ini src"
+        language: system
+
+      - id: mypy
+        name: mypy
+        entry: sh -c "mypy --package src --namespace-packages"
+        language: system
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: fix-byte-order-marker
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: mixed-line-ending

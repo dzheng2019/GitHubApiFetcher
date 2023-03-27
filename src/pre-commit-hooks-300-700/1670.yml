@@ -1,0 +1,20 @@
+repos:
+- repo: local
+  hooks:
+    - id: regenerate-code
+      name: regenerate-code
+      language: system
+      entry: hack/update-codegen.sh
+      pass_filenames: false  # This will only run the script once
+
+- repo: https://github.com/dnephin/pre-commit-golang
+  rev: v0.5.1
+  hooks:
+    - id: go-fmt
+    - id: go-imports
+    - id: go-cyclo
+      args: [-over=15]
+    - id: golangci-lint
+    - id: go-critic
+    - id: go-build
+    - id: go-mod-tidy

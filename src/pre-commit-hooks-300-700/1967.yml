@@ -1,0 +1,16 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: detect-private-key
+      - id: check-yaml
+      - id: end-of-file-fixer
+        exclude: 'package-lock.json|apps/mull-ui/src/generated/graphql.tsx'
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.2.1
+    hooks:
+      - id: prettier
+        exclude: 'package-lock.json'
+default_language_version:
+  python: python3
+  node: '12.8.0'

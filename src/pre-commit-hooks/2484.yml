@@ -1,0 +1,7 @@
+repos:
+- repo: local
+  hooks:
+  - id: formatting_md_to_html
+    name: convert_to_html.py
+    entry: python3 convert_to_html.py
+    language: system

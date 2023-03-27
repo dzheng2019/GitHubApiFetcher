@@ -1,0 +1,24 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: trailing-whitespace
+        exclude: '\.patch$'
+    -   id: end-of-file-fixer
+        exclude: '\.patch$'
+    -   id: check-yaml
+    -   id: check-added-large-files
+-   repo: local
+    hooks:
+    # TODO: replace this with individual hooks
+    -   id: local-pre-commit
+        name: run old pre-commit script
+        language: system
+        entry: hooks/pre-commit
+        files: ^.*$
+-   repo: https://github.com/crate-ci/typos
+    rev: v1.13.6
+    hooks:
+      - id: typos

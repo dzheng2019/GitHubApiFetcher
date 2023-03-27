@@ -1,0 +1,19 @@
+repos:
+    -   repo: https://github.com/pre-commit/pre-commit-hooks
+        rev: v4.1.0
+        hooks:
+            -   id: end-of-file-fixer
+                types: [ python ]
+                exclude: migrations|models/__init__.py
+    -   repo: https://github.com/pycqa/isort
+        rev: 5.10.1
+        hooks:
+            -   id: isort
+                name: isort (python)
+                exclude: migrations|models/__init__.py
+    -   repo: https://gitlab.com/pycqa/flake8
+        rev: 4.0.1
+        hooks:
+            -   id: flake8
+                types: [ python ]
+                exclude: migrations

@@ -1,0 +1,19 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-merge-conflict
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 2.1.5
+    hooks:
+      - id: shellcheck
+        exclude:
+          (?x)^(
+          sh/.include|
+          zsh/.*
+          )$
+      - id: shfmt

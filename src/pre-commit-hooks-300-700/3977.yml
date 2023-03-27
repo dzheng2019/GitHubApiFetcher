@@ -1,0 +1,31 @@
+repos:
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: check-yaml
+        exclude: "k8s/devops-uni/"
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/markdownlint/markdownlint
+    rev: v0.11.0
+    hooks:
+      - id: markdownlint
+        args: [--rules=~MD013]
+
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.6.0
+    hooks:
+      - id: hadolint-docker
+
+  - repo: https://github.com/psf/black
+    rev: 21.7b0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.8.0
+    hooks:
+      - id: isort
+        args: [profile="black"]

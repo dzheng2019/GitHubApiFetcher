@@ -1,0 +1,5 @@
+repos:
+- repo: https://github.com/pierre-ernst/snyk
+  rev: v1.528.1-SNAPSHOT
+  hooks:
+    - id: snyk

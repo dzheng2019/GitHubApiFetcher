@@ -1,0 +1,20 @@
+default_language_version:
+  python: python3.11
+
+fail_fast: true
+
+repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: 'v0.0.254'
+    hooks:
+      - id: ruff
+        args: [
+          --fix,
+          --ignore, E402, # 402 = module level import not at top of file
+          --ignore, E501, # E501 = line too long
+          ]
+
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black

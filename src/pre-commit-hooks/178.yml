@@ -1,0 +1,4 @@
+- repo: git://github.com/antonbabenko/pre-commit-terraform
+  rev: master
+  hooks:
+    - id: terraform_fmt

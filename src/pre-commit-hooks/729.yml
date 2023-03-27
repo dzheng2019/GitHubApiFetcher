@@ -1,0 +1,5 @@
+repos:
+-   repo: https://github.com/huyenuet/sam_tech_training
+    rev: v1.2.3
+    hooks:
+    -   id: trailing-whitespace

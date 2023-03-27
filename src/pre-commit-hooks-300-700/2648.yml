@@ -1,0 +1,25 @@
+---
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.14
+    hooks:
+      - id: mdformat
+        additional_dependencies:
+          - mdformat-gfm
+          - mdformat-toc
+
+  - repo: https://github.com/trussworks/pre-commit-hooks
+    rev: v1.1.1
+    hooks:
+      - id: mdspell
+      - id: spelling-sort
+
+# EOF

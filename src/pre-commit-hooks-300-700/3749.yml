@@ -1,0 +1,23 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: check-case-conflict
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://dev.azure.com/DB-DBLab/DevOps/_git/pre-commit-hooks-cpp
+    rev: v0.0.1
+    hooks:
+      - id: clang-format
+      - id: cpplint
+        args:
+          [
+            "--extensions=c,cpp,h,hpp",
+            "--headers=h",
+            --recursive,
+            "--filter=-readability/casting,-runtime/int,-build/include_subdir,-legal/copyright,-runtime/arrays",
+          ]
+      - id: cppcheck
+        args: ["*", --language=c++]

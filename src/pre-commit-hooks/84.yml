@@ -1,0 +1,4 @@
+- repo: https://github.com/sum41k/pre-commit-hooks-custom.git
+  rev: v0.0.4
+  hooks:
+  - id: hadolint

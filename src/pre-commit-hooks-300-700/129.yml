@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/pycqa/pylint
+    rev: v2.16.0b1
+    hooks:
+      - id: pylint
+        additional_dependencies: [requests, requests_mock]
+  - repo: https://github.com/psf/black
+    rev: 22.12.0
+    hooks:
+      - id: black
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort

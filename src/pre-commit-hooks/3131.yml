@@ -1,0 +1,6 @@
+repos:
+  -   repo: github.com/alextonkonogov/gb_go_best_practices
+      rev: v1.0.2
+      hooks:
+        -   id: golangci-lint
+        -   id: go-unit-tests

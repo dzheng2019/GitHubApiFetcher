@@ -1,0 +1,19 @@
+repos:
+  - repo: https://github.com/jguttman94/pre-commit-gradle
+    rev: v0.3.0
+    hooks:
+      - id: gradle-task
+        name: Apply Spotless
+        args: [":addLicenseHeader", -w, -o]
+        types: [kotlin]
+  - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: v2.4.0
+    hooks:
+      - id: pretty-format-kotlin
+        args: [--autofix]
+        types: [file] # override `types: [json]`
+        files: \.(kt|kts)$
+  - repo: https://github.com/shssoichiro/oxipng
+    rev: v6.0.1
+    hooks:
+      - id: oxipng

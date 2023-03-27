@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-merge-conflict
+  - repo: local
+    hooks:
+      - id: lint
+        name: lint
+        language: system
+        entry: make lint
+      - id: tidy
+        name: tidy
+        language: system
+        entry: make tidy

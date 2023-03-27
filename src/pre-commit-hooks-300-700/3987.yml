@@ -1,0 +1,20 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: local
+    hooks:
+      - id: mix-format-firmware
+        name: mix format ExRack
+        description: Formats Elixir files with mix format.
+        language: system
+        entry: sh -c 'cd exrack_firmware && mix format'
+        files: ^exrack_firmware/.*\.exs?$
+      - id: mix-format-ui
+        name: mix format ExRackUI
+        description: Formats Elixir files with mix format.
+        language: system
+        entry: sh -c 'cd exrack_ui && mix format'
+        files: ^exrack_ui/.*\.exs?$

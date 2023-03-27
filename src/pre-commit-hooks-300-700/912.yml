@@ -1,0 +1,14 @@
+repos:
+  - repo: local
+    hooks:
+      - id: nixpkgs-fmt
+        name: nixpkgs-fmt
+        description: Format nix code with nixpkgs-fmt.
+        entry: nixpkgs-fmt
+        language: system
+        files: \.nix$
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+    rev: 2.4.0
+    hooks:
+      - id: editorconfig-checker
+        alias: ec

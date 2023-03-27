@@ -1,0 +1,23 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=4096"]
+      - id: check-json
+      - id: check-yaml
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.7.1
+    hooks:
+      - id: prettier
+        additional_dependencies:
+          - prettier@2.8.1
+          - prettier-plugin-tailwindcss
+
+  - repo: https://github.com/yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        args: ["--baseline", ".secrets.baseline"]
+        exclude: package.lock.json

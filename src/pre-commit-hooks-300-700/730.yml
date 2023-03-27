@@ -1,0 +1,17 @@
+repos:
+- repo: local
+
+  hooks:
+    - id: black
+      name: black
+      entry: black
+      language: system
+      types: [python]
+      args: [--line-length=80]
+      
+    - id: autoflake
+      name: autoflake
+      entry: autoflake
+      language: system
+      types: [python]
+      args: [--in-place, --remove-all-unused-imports, --remove-duplicate-keys]

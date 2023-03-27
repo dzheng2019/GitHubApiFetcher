@@ -1,0 +1,25 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0  # Use the ref you want to point at
+  hooks:
+    - id: trailing-whitespace
+      exclude: '^vendor/.*$'
+    - id: end-of-file-fixer
+      exclude: '^vendor/.*$'
+    - id: check-added-large-files
+      exclude: '^vendor/.*$'
+- repo: https://github.com/dnephin/pre-commit-golang
+  rev: v0.5.1
+  hooks:
+    - id: go-fmt
+      exclude: '^vendor/.*$'
+    - id: go-vet
+      exclude: '^(tools|vendor)\/.*$'
+    - id: go-imports
+      exclude: '^vendor/.*$'
+    - id: go-mod-tidy
+      exclude: '^vendor/.*$'
+- repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.77.0
+  hooks:
+    - id: terraform_fmt

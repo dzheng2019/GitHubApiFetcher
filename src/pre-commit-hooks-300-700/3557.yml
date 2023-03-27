@@ -1,0 +1,21 @@
+exclude: '^$'
+fail_fast: false
+default_language_version:
+    python: python3.8
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.0.1
+      hooks:
+          - id: check-symlinks
+          - id: check-ast
+          - id: check-merge-conflict
+          - id: debug-statements
+    - repo: https://github.com/shellcheck-py/shellcheck-py
+      rev: v0.7.2.1
+      hooks:
+          - id: shellcheck
+    - repo: https://github.com/doublify/pre-commit-clang-format
+      rev: 62302476d0da01515660132d76902359bed0f782
+      hooks:
+          - id: clang-format
+            types: [c++]

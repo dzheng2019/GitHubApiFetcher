@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/anderseknert/pre-commit-opa
+    rev: v1.5.0
+    hooks:
+      - id: conftest-fmt
+      - id: conftest-verify
+        args: ['--data', 'data/', '--policy', 'policies/', '--output', 'github']
+
+  - repo: local
+    hooks:
+      - id: gen-policies
+        name: Generate Documentation
+        entry: scripts/build-policies.sh
+        language: script
+        files: policies|\.md

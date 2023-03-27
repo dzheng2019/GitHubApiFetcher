@@ -1,0 +1,12 @@
+repos:
+- repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.77.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  hooks:
+    - id: terraform_fmt
+    - id: terraform_docs
+    - id: terraform_tflint
+      name: Initialize tflint 
+      args: 
+        - --args=--init
+        - --args=--config=__GIT_WORKING_DIR__/.tflint.hcl    
+    - id: terraform_tflint

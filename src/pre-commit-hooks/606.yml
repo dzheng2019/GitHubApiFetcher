@@ -1,0 +1,5 @@
+repos:
+-   repo: https://github.com/OrWestSide/mypy-pre-commit
+    rev: master
+    hooks:
+    -   id: end-of-file-fixer

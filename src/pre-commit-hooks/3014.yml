@@ -1,0 +1,7 @@
+repos:
+- repo: https://github.com/marcpires/devops-hands-on
+  rev: v0.1.0
+  hooks:
+  - id: trailing-whitespace
+  - id: check-yaml
+    files: \.(yaml|yml)$

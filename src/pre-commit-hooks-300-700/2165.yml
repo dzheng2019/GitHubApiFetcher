@@ -1,0 +1,25 @@
+repos:
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+    - id: isort
+      exclude: ^migrations/
+
+-   repo: https://github.com/ambv/black
+    rev: 22.3.0
+    hooks:
+    - id: black
+      exclude: ^tests/
+      args: [ --config, pyproject.toml ]
+
+-   repo: https://github.com/PyCQA/flake8
+    rev: 4.0.1
+    hooks:
+    - id: flake8
+      exclude: ^migrations/
+      args: [--config, setup.cfg]
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+    -   id: double-quote-string-fixer

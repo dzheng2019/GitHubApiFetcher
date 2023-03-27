@@ -1,0 +1,16 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/milanof-huma/pre-commit
+    rev: v0.1.13 # Get the latest from: https://github.com/milanof-huma/pre-commit/releases
+    hooks:
+      - id: terraform-fmt
+      - id: gofmt
+      - id: golint
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.48.0
+    hooks:
+      - id: terraform_docs

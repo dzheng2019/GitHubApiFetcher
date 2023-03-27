@@ -1,0 +1,19 @@
+repos:
+- repo: git://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+  - id: trailing-whitespace
+    files: \.(js|rb|md|py|sh|txt|yaml|yml)$
+  - id: check-yaml
+    files: \.(yaml|yml)$
+  - id: check-merge-conflict
+    files: \.(js|rb|md|py|sh|txt|yaml|yml)$
+  - id: check-symlinks
+  - id: end-of-file-fixer
+  - id: check-executables-have-shebangs
+
+- repo: git://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.50.0
+  hooks:
+  - id: terraform_fmt
+  - id: terraform_docs
