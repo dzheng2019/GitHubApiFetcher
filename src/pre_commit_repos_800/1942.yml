@@ -1,0 +1,35 @@
+repos:
+  - repo: local
+    hooks:
+    -   id: flake8
+        name: Flake8
+        description: This hook runs flake8 within our project's poetry environment.
+        entry: poetry run flake8
+        language: python
+        types: [python]
+        require_serial: true
+  - repo: https://github.com/psf/black
+    rev: 19.10b0
+    hooks:
+      - id: black
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.1.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-yaml
+      - id: end-of-file-fixer
+        exclude_types: [binary]
+      - id: mixed-line-ending
+        exclude_types: [binary]
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.5.1
+    hooks:
+    -   id: python-check-blanket-noqa
+  - repo: https://github.com/aflc/pre-commit-jupyter
+    rev: v1.1.0
+    hooks:
+      - id: jupyter-notebook-cleanup
+        args:
+          - --pin-patterns
+          - "[pin];[donotremove]"

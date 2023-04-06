@@ -1,0 +1,37 @@
+repos:
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        stages: [commit]
+        language: system
+        entry: isort
+        types: [python]
+
+      - id: black
+        name: black
+        stages: [commit]
+        language: system
+        entry: black
+        types: [python]
+
+      - id: autoflake
+        name: autoflake
+        stages: [commit]
+        language: system
+        entry: autoflake
+        args: ['--in-place', '--remove-all-unused-imports', '--remove-unused-variable']
+      
+      - id: flake8
+        name: flake8
+        stages: [commit]
+        language: system
+        entry: flake8
+        types: [python]
+
+      - id: pytest
+        name: pytest
+        stages: [push]
+        language: system
+        entry: pytest --testmon -x
+        types: [python]

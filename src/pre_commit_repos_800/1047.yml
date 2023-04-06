@@ -1,0 +1,40 @@
+repos:
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        name: isort (python)
+        args: [--profile=black]
+
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-byte-order-marker
+        exclude: ^tests/.*
+      - id: check-case-conflict
+        exclude: ^tests/.*
+      - id: check-merge-conflict
+        exclude: ^tests/.*
+      - id: check-symlinks
+        exclude: ^tests/.*
+      - id: check-yaml
+        exclude: ^tests/.*
+      - id: end-of-file-fixer
+        exclude: ^tests/.*
+      - id: mixed-line-ending
+        exclude: ^tests/.*
+      - id: trailing-whitespace
+        exclude: ^tests/.*
+      - id: end-of-file-fixer
+        exclude: ^tests/.*

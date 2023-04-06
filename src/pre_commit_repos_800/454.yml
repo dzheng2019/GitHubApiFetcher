@@ -1,0 +1,40 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: debug-statements
+        exclude: .gitlab-ci.yml
+
+-   repo: https://github.com/PyCQA/bandit
+    rev: 1.7.0
+    hooks:
+      - id: bandit
+        args: ['-iii', '-ll', '-s=B607,B605']
+
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.8.4
+    hooks:
+      - id: flake8
+        args:
+          - --ignore=E501,W503,W391
+
+-   repo: https://github.com/ambv/black
+    rev: 20.8b1
+    hooks:
+      - id: black
+        language_version: python3
+        args: [
+#            --check,
+#            --diff,
+            --line-length=79,
+        ]
+
+-   repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.7.0
+    hooks:
+      - id: isort
+        args: [
+#           --check-only,
+#           --diff
+        ]

@@ -1,0 +1,50 @@
+exclude: ".*.deepcopy.go"
+repos:
+# Fixers
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.3.0
+  hooks:
+  - id: end-of-file-fixer
+  - id: pretty-format-json
+    args:
+    - --autofix
+  - id: trailing-whitespace
+  - id: mixed-line-ending
+    args: [--fix=lf]
+
+- repo: local
+  hooks:
+  - id: go-mod-tidy
+    name: go-mod-tidy
+    entry: ./mage check:tidy
+    language: system
+    pass_filenames: false
+    always_run: true
+    require_serial: true
+  - id: go-mod-verify
+    name: go-mod-verify
+    entry: ./mage check:verify
+    language: system
+    pass_filenames: false
+    always_run: true
+    require_serial: true
+  - id: golangci-lint
+    name: golangci-lint
+    entry: ./mage check:lint
+    language: system
+    pass_filenames: false
+    types: [go]
+    require_serial: true
+
+# Checkers
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.3.0
+  hooks:
+  - id: check-added-large-files
+  - id: check-case-conflict
+  - id: check-json
+  - id: check-merge-conflict
+  - id: check-symlinks
+  - id: detect-private-key

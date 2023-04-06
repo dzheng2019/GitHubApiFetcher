@@ -1,0 +1,32 @@
+# TODO: @memes - remove unused plugins for project
+---
+# spell-checker:disable
+repos:
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.29.0
+    hooks:
+      - id: yamllint
+        files: \.(yml|yaml|talismanrc)$
+        types: [file, yaml]
+        # GDM templates extensively break linting rules but don't want to change
+        # them, so ignore them.
+        exclude: GDMv[12]
+        entry: yamllint --strict
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.77.1
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_docs
+        args: ['--args=--sort-by=required --hide=providers']
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-executables-have-shebangs
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/thoughtworks/talisman
+    rev: v1.30.2
+    hooks:
+      - id: talisman-commit

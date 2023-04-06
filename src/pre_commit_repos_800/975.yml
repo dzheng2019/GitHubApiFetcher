@@ -1,0 +1,39 @@
+repos:
+-   repo: https://github.com/psf/black
+    rev: 22.6.0
+    hooks:
+    - id: black
+      language_version: python
+      args: [--line-length=120]
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+    -   id: end-of-file-fixer
+        description: Adds new line at end of module
+
+-   repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+    -   id: isort
+
+-   repo: local
+    hooks:
+    -   id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        'types': [python]
+        args: [
+            "--fail-under=9.5",
+            "--ignore-paths=.*migrations.*",
+            "--output-format=colorized",
+        ]
+    -   id: pytest
+        name: pytest
+        stages: [commit]
+        language: system
+        entry: pytest -s -v .
+        types: [python]
+        pass_filenames: false
+        always_run: true

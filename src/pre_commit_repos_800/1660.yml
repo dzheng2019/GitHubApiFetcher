@@ -1,0 +1,33 @@
+repos:
+  # - repo: https://github.com/antonbabenko/pre-commit-terraform
+  #   rev: v1.55.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  #   hooks:
+  #     - id: terraform_fmt
+  #     - id: terraform_docs
+  #     - id: terraform_tflint
+  #       args:
+  #         - "--args=--config=__GIT_WORKING_DIR__/terraform/.tflint.hcl"
+  - repo: https://github.com/psf/black
+    rev: 19.10b0
+    hooks:
+      - id: black
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.5.0
+    hooks:
+      - id: check-added-large-files
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: poetry run pylint src/ --ignore=src/tests
+        language: system
+        always_run: true
+        pass_filenames: false
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: poetry run pytest tests/
+        language: system
+        always_run: true
+        pass_filenames: false

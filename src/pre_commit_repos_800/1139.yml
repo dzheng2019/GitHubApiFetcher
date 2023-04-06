@@ -1,0 +1,39 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+    -   id: check-toml
+        always_run: true
+        verbose: true
+    -   id: check-yaml
+        always_run: true
+        verbose: true
+    -   id: pretty-format-json
+        always_run: true
+        verbose: true
+        args: ["--autofix"]
+        exclude: .dvc
+    -   id: requirements-txt-fixer
+        always_run: true
+        verbose: true
+-   repo: https://github.com/ambv/black
+    rev: 20.8b1
+    hooks:
+    -   id: black
+        always_run: true
+        verbose: true
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.0
+    hooks:
+    -   id: flake8
+        always_run: true
+        verbose: true
+-   repo: local
+    hooks:
+    -   id: test
+        name: test
+        entry: make test-no-log
+        language: system
+        pass_filenames: false
+        always_run: true
+        verbose: true

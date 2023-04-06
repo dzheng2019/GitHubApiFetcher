@@ -1,0 +1,33 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+        types: [python]
+      - id: trailing-whitespace
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+  - repo: https://github.com/psf/black
+    rev: 22.3.0  # Keep in sync with black version on setup.py
+    hooks:
+      - id: black
+  # pre-commit run --hook-stage manual mypy-local
+  - repo: local
+    hooks:
+      - id: mypy-local
+        name: mypy (in user's venv)
+        language: system
+        stages: [manual]
+        entry: venv/Scripts/mypy.exe --config-file=mypy.ini
+  # autoflake (manual-mode)
+  # pre-commit run --hook-stage manual autoflake
+  - repo: https://github.com/myint/autoflake
+    rev: v1.4
+    hooks:
+      - id: autoflake
+        stages: [manual]
+        args: [--in-place, -r, --remove-all-unused-imports, --ignore-init-module-imports]

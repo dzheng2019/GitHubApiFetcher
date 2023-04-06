@@ -1,0 +1,33 @@
+# To install the git pre-commit hook run:
+#   pre-commit install
+# To update the pre-commit hooks run:
+#   pre-commit install-hooks
+repos:
+    - repo: https://github.com/charliermarsh/ruff-pre-commit
+      rev: v0.0.254
+      hooks:
+        - id: ruff
+    - repo: https://github.com/Lucas-C/pre-commit-hooks
+      rev: v1.4.2
+      hooks:
+        - id: forbid-tabs
+        - id: remove-tabs
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.2.0
+      hooks:
+          - id: check-case-conflict
+          - id: check-docstring-first
+          - id: check-executables-have-shebangs
+          - id: check-merge-conflict
+          - id: check-toml
+          - id: debug-statements
+          - id: end-of-file-fixer
+          - id: mixed-line-ending
+            args: [--fix=lf]
+          - id: requirements-txt-fixer
+          - id: trailing-whitespace
+            args: [--markdown-linebreak-ext=md]
+    - repo: https://github.com/psf/black
+      rev: 23.1.0
+      hooks:
+          - id: black

@@ -1,0 +1,38 @@
+ci:
+  autoupdate_schedule: "monthly"
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: check-yaml
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+  - id: debug-statements
+- repo: https://github.com/psf/black
+  rev: 23.1.0
+  hooks:
+  - id: black
+    files: ^openff
+- repo: https://github.com/PyCQA/isort
+  rev: 5.12.0
+  hooks:
+  - id: isort
+    files: ^openff
+- repo: https://github.com/PyCQA/flake8
+  rev: 6.0.0
+  hooks:
+  - id: flake8
+    files: ^openff
+    additional_dependencies: [
+        'flake8-bugbear',
+        'flake8-absolute-import',
+        'flake8-pytest-style',
+        'flake8-no-pep420',
+    ]
+- repo: https://github.com/asottile/pyupgrade
+  rev: v3.3.1
+  hooks:
+  - id: pyupgrade
+    files: ^openff
+    exclude: openff/models/_version.py|setup.py
+    args: [--py38-plus]

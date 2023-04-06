@@ -1,0 +1,33 @@
+fail_fast: true
+repos:
+  - repo: local
+    hooks:
+      - id: mix-format
+        name: "elixir: mix format"
+        entry: mix format --check-formatted
+        language: system
+        files: \.exs*$
+
+      # this fails if we have removed a package from our deps tree
+      # but not our mix.lock file
+      - id: mix-deps
+        name: "elixir: stale deps check"
+        entry: bash -c 'echo "! run \"mix deps.clean --unlock --unused\" to fix this:" && exec mix deps.unlock --check-unused' --
+        language: system
+        files: \.exs*$
+
+      - id: mix-credo
+        name: "elixir: mix credo"
+        entry: mix credo
+        language: system
+        pass_filenames: false
+        files: \.exs*$
+
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-toml

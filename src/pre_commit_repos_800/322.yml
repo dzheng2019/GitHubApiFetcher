@@ -1,0 +1,30 @@
+repos:
+  # general hooks
+  -   repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v2.3.0
+      hooks:
+        -   id: check-yaml
+        -   id: end-of-file-fixer
+        -   id: trailing-whitespace
+  # formatting
+  -   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+      rev: v2.2.0
+      hooks:
+        -  id: pretty-format-java
+           args: [--autofix]
+
+ # Markdownlint
+  -   repo: https://github.com/igorshubovych/markdownlint-cli
+      rev: v0.30.0
+      hooks:
+      - id: markdownlint
+
+  # maven build and test
+  -   repo: https://github.com/ejba/pre-commit-maven
+      rev: v0.3.2
+      hooks:
+        - id: maven
+          args: ['clean compile']
+      #  - id: maven-checkstyle
+      #  - id: maven-spotless-check
+      #  - id: maven-spotless-apply

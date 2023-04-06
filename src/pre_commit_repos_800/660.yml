@@ -1,0 +1,31 @@
+ci:
+  autoupdate_schedule: quarterly
+repos:
+  - repo: https://github.com/psf/black
+    rev: 22.12.0
+    hooks:
+      - id: black
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-comprehensions]
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+  - repo: https://github.com/jazzband/pip-tools
+    rev: 6.12.1
+    hooks:
+      - id: pip-compile
+        name: pip-compile backend/requirements.in
+        files: ^backend/requirements\.(in|txt)$
+        args: [backend/requirements.in]
+      - id: pip-compile
+        name: pip-compile backend/requirements_dev.in
+        files: ^backend/requirements(_dev)?\.(in|txt)$
+        args: [backend/requirements_dev.in]
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.0.0-alpha.4
+    hooks:
+      - id: prettier

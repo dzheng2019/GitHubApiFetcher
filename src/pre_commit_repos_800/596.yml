@@ -1,0 +1,42 @@
+repos:
+- repo: local
+  hooks:
+    - id: isort
+      name: isort (python)
+      entry: isort
+      language: system
+      types_or: [python]
+      args: ["--filter-files"]
+    - id: black
+      name: black (python)
+      entry: black
+      language: system
+      types_or: [python]
+    - id: mypy
+      name: mypy
+      entry: mypy
+      language: system
+      types: [ python ]
+    - id: pylint
+      name: pylint
+      entry: pylint
+      language: system
+      types: [python]
+      args:
+        [
+          "-rn", # Only display messages
+          "-sn", # Don't display the score
+          "--rcfile=.pylintrc", # Link to your config file
+          "-j",
+          "8"
+        ]
+    - id: pytest-check
+      name: pytest-check
+      entry: pytest
+      language: system
+      pass_filenames: false
+      always_run: true
+      args:
+        [
+          "--color=no",
+        ]

@@ -1,0 +1,41 @@
+---
+repos:
+  # Yaml
+  - repo: "https://github.com/adrienverge/yamllint.git"
+    rev: "v1.29.0"
+    hooks:
+      - id: yamllint
+        args: [-c=/.config/yamllint.yaml]
+  # Golang
+  # - repo: "https://github.com/dnephin/pre-commit-golang.git"
+  #   rev: "v0.5.1"
+  #   hooks:
+  #     - id: go-fmt
+  # Python
+  - repo: "https://github.com/psf/black.git"
+    rev: "23.1.0"
+    hooks:
+      - id: black
+  # Dockerfile
+  - repo: "https://github.com/hadolint/hadolint.git"
+    rev: "v2.12.0"
+    hooks:
+      - id: hadolint
+        args: [--ignore=SC3037]
+        # SC3037: in posix sh, echo flags are undefined
+  # Shell
+  - repo: "https://github.com/lovesegfault/beautysh.git"
+    rev: "v6.2.1"
+    hooks:
+      - id: beautysh
+  # General
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: "v4.4.0"
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: trailing-whitespace

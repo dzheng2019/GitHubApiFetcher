@@ -1,0 +1,38 @@
+default_stages: [commit, push]
+repos:
+- repo: local
+  hooks:
+  # - id: pre-comit
+  #   name: pre-commit linting
+  #   language: system
+  #   entry: make pre-commit
+  #   verbose: true
+  #   stages: [ commit ]
+  - id: pre-push
+    name: pre-push testing
+    language: system
+    entry: make pre-push
+    verbose: true
+    stages: [ push ]
+  - id: pre-commit-k8s
+    name: pre-push k8s
+    language: system
+    entry: pre-commit-k8s
+    stages: [ commit ]
+# - repo: https://github.com/datreeio/datree
+#   # rev is the .pre-commit-hooks.yaml version
+#   # could also be a version or a release tag
+#   rev: 1.6.37
+#   hooks:
+#     - id: datree-docker
+- repo: https://github.com/adrienverge/yamllint
+  rev: v1.28.0
+  hooks:
+  - id: yamllint
+    args: ["--strict", "-d", "{rules: {line-length: {max: 180}}}"]
+- repo: https://github.com/Agilicus/pre-commit-hook-k8svalidate.git
+  rev: v0.1.0
+  hooks:
+    - id: k8svalidate
+      args: [--exclude, "**/*.patch.yaml"]
+      files: .yaml$

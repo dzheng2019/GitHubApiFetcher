@@ -1,0 +1,38 @@
+repos:
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.2
+    hooks:
+    -   id: flake8
+        args:
+          - style
+          - tests
+#-   repo: https://github.com/pycqa/isort
+    #rev: 5.9.2
+    #hooks:
+    #-   id: isort
+        #args:
+          #- tests style
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+      exclude: ^tests/fixtures/diffs/
+-   repo: https://github.com/ambv/black
+    rev: 21.7b0
+    hooks:
+    - id: black
+      language_version: python3.8
+      args:
+        - --exclude=/(\.eggs|\.git|\.hg|\.venv|build|dist|)/
+        - --target-version=py39
+        - -l 80
+-   repo: local
+    hooks:
+    -   id: tests
+        name: tests
+        entry: pytest -v
+        language: system
+        pass_filenames: false
+        types: [python]
+        stages: [push]

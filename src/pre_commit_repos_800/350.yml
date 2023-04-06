@@ -1,0 +1,28 @@
+
+repos:
+    - repo: local
+      hooks:
+        - id: YAPF
+          name: YAPF 🧹
+          entry: bash -c 'yapf --in-place **/*.py'
+          language: system
+          always_run: true
+          pass_filenames: true
+        - id: isort
+          name: isort 📚
+          entry: bash -c 'isort ./src/'
+          language: system
+          always_run: true
+          pass_filenames: true
+        - id: autoflake
+          name: autoflake ❄️
+          entry: bash -c 'autoflake --in-place --remove-unused-variables --remove-all-unused-imports **/*.py'
+          language: system
+          always_run: true
+          pass_filenames: true
+        - id: pylint
+          name: pylint 🔎
+          entry: bash -c 'pylint --fail-under=7 **/*.py'
+          language: system
+          always_run: true
+          pass_filenames: true

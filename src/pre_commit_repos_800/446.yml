@@ -1,0 +1,33 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+  - id: check-case-conflict
+  - id: check-merge-conflict
+  - id: check-yaml
+  - id: end-of-file-fixer
+  - id: fix-byte-order-marker
+  - id: trailing-whitespace
+
+- repo: local
+  hooks:
+  - id: swift-lint-auto-formatting
+    name: SiwftLint auto formatting
+    entry: swiftlint --fix
+    language: system
+    files: .*\.swift$
+  - id: swift-format-auto-formatting
+    name: SwiftFormat auto formatting
+    entry: swiftformat
+    language: system
+    files: .*\.swift$
+  - id: swift-lint-linting
+    name: SiwftLint linting
+    entry: swiftlint lint
+    language: system
+    files: .*\.swift$
+  - id: swift-format-linting
+    name: SwiftFormat liting
+    entry: swiftformat --lint
+    language: system
+    files: .*\.swift$

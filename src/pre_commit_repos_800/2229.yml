@@ -1,0 +1,38 @@
+repos:
+  - repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+      - id: black
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: trailing-whitespace
+        language_version: python3
+      - id: check-json
+        language_version: python3
+        types: ["json"]
+  - repo: https://github.com/prettier/prettier
+    rev: "2.1.1"
+    hooks:
+      - id: prettier
+        types: ["json"]
+  - repo: https://github.com/pycqa/isort
+    rev: 5.8.0
+    hooks:
+      - id: isort
+        name: isort (python)
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        entry: "./run-mypy.sh"
+        language: python
+        language_version: python3.10
+        additional_dependencies: [ "mypy==0.910" ]
+        types: [python]
+        pass_filenames: false
+        # use require_serial so that script
+        # is only called once per commit
+        require_serial: true
+        # Print the number of files as sanity-check
+        verbose: true

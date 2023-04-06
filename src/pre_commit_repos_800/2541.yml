@@ -1,0 +1,41 @@
+---
+fail_fast: false
+repos:
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.30.0
+    hooks:
+      - id: yamllint
+        args:
+          - -c
+          - .github/yamllint.config.yaml
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: ^README\.md$
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.4.2
+    hooks:
+      - id: remove-crlf
+      - id: remove-tabs
+  - repo: https://github.com/sirosen/fix-smartquotes
+    rev: 0.2.0
+    hooks:
+      - id: fix-smartquotes
+  - repo: https://github.com/onedr0p/sops-pre-commit
+    rev: v2.1.1
+    hooks:
+      - id: forbid-secrets
+  - repo: https://github.com/containeroo/pre-commit-hooks
+    rev: v0.0.14
+    hooks:
+      - id: namespaced
+        args:
+          - --ignore-kind
+          - ClusterIssuer
+          - --ignore-kind
+          - Account
+          - --ignore-kind
+          - IP

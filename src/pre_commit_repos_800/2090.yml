@@ -1,0 +1,44 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+-   repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+    -   id: black
+        language_version: python3.9
+-   repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        name: isort (python)
+
+-   repo: local
+    hooks:
+    -   id: mypy
+        name: mypy
+        stages: [ post-commit ]
+        language: system
+        entry: poetry run mypy
+        types: [python]
+        require_serial: true
+
+    -   id: pytest
+        name: pytest
+        stages: [ push ]
+        language: system
+        entry: poetry run pytest
+        types: [ python ]
+        pass_filenames: false
+
+    -   id: pytest-cov
+        name: pytest
+        stages: [ push ]
+        language: system
+        entry: poetry run pytest --cov --cov-fail-under=100
+        types: [ python ]
+        pass_filenames: false

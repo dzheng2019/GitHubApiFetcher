@@ -1,0 +1,42 @@
+default_language_version:
+  python: python3.9
+
+fail_fast: true
+default_stages: [commit]
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: debug-statements
+
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        entry: poetry run isort --check-only
+        args: [.]
+        language: system
+        pass_filenames: false
+
+      - id: pydocstyle
+        name: pydocstyle
+        entry: poetry run pydocstyle
+        args: [.]
+        language: system
+        pass_filenames: false
+
+      - id: black
+        name: black
+        entry: poetry run black --check
+        args: [.]
+        language: system
+        pass_filenames: false
+
+      - id: pylint-application
+        name: pylint-application
+        entry: poetry run pylint
+        args: [backend]
+        language: system
+        pass_filenames: false
+

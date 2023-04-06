@@ -1,0 +1,31 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.1.0
+    hooks:
+    -   id: check-merge-conflict
+    -   id: trailing-whitespace
+        exclude: ^docs/assets/|^src/app/fonts/
+-   repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.7
+    hooks:
+    -   id: remove-crlf
+    -   id: remove-tabs
+        exclude: ^docs/assets/
+-   repo: local
+    hooks:
+    -   id: forbid-variables-starting-with-nb
+        name: Forbid nb-prefixed variables, use a Count suffix instead, cf. tech_docs/javascript.md
+        language: pygrep
+        entry: " nb[A-Z]"
+        files: \.js$
+        exclude: ^docs/assets/
+    -   id: forbid-artifactory-in-package-lock
+        name: Forbid artifactory domain in package-lock.json resolved dependencies
+        language: pygrep
+        entry: artifactory
+        files: package-lock.json
+    -   id: find-unused-i18n-strings
+        name: Find unused i18n strings
+        language: system
+        entry: ./list_unused_i18n.py
+        files: ^src/app/

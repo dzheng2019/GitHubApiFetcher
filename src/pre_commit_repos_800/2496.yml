@@ -1,0 +1,41 @@
+repos:
+  - repo: https://github.com/pycqa/isort
+    rev: 5.6.4
+    hooks:
+      - id: isort
+        files: 'dsul/.*'
+      - id: isort
+        files: 'tests/.*'
+  - repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+      - id: black
+        language_version: python3.8
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.8.4
+    hooks:
+      - id: flake8
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.790
+    hooks:
+      - id: mypy
+        args: [--no-strict-optional, --ignore-missing-imports, --namespace-packages]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: mixed-line-ending
+  - repo: local
+    hooks:
+      - id: check-strings
+        name: check-strings
+        language: script
+        entry: ./scripts/check-strings.sh
+        files: ''
+        exclude: |
+          (?x)^(
+            scripts/check-strings.sh|
+            README.md|
+            LICENSE
+          )$

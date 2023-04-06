@@ -1,0 +1,32 @@
+repos:
+  - repo: https://github.com/ambv/black
+    rev: 21.6b0
+    hooks:
+      - id: black
+        language_version: python3.10
+        additional_dependencies: ["click==7.1.2"]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+      - id: check-docstring-first
+      - id: check-json
+      - id: requirements-txt-fixer
+      - id: detect-private-key
+      - id: trailing-whitespace
+        exclude: ^templates/templated_email/compiled/
+        exclude_types: [svg]
+      - id: end-of-file-fixer
+        exclude: ^templates/templated_email/compiled/
+        exclude_types: [svg]
+
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.8.4
+    hooks:
+      - id: flake8
+
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.9.1
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]

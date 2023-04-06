@@ -1,0 +1,36 @@
+# We use poetry to run formatting and linting before commit/push
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb=800']
+      - id: check-ast
+      - id: check-merge-conflict
+      - id: trailing-whitespace
+      - id: check-toml
+  - repo: local
+    hooks:
+      - id: black
+        name: formatting::black
+        entry: poetry run black
+        language: system
+        types: [python]
+      - id: isort
+        name: formatting::isort
+        entry: poetry run isort
+        language: system
+        types: [python]
+  - repo: local
+    hooks:
+      - id: flake8
+        name: linting::flake8
+        entry: poetry run flake8
+        language: system
+        types: [python]
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v2.38.0
+    hooks:
+      - id: commitizen
+        stages: [push]

@@ -1,0 +1,30 @@
+---
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.3.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+    exclude: ^\.idea
+  - id: check-case-conflict
+  - id: check-merge-conflict
+  - id: check-added-large-files
+  - id: check-yaml
+  - id: mixed-line-ending
+- repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+  rev: 2.6.1
+  hooks:
+  - id: editorconfig-checker
+    types_or:
+    - text
+- repo: https://github.com/shellcheck-py/shellcheck-py
+  rev: v0.8.0.4
+  hooks:
+  - id: shellcheck
+- repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+  rev: 0.2.2    # or specific tag
+  hooks:
+  - id: yamlfmt
+    args: [--mapping, '2', --sequence, '2', --offset, '0']

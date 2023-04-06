@@ -1,0 +1,33 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-executables-have-shebangs
+      - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
+        exclude: utils.bash
+      - id: check-yaml
+      - id: detect-aws-credentials
+        args:
+          - --allow-missing-credentials
+      - id: trailing-whitespace
+
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+    rev: '2.7.1'
+    hooks:
+      - id: editorconfig-checker
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.9.0.2
+    hooks:
+      - id: shellcheck
+        args:
+          - --shell=bash
+          - --external-sources
+          - --source-path=lib/
+
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: '3.0.0'
+    hooks:
+      - id: shfmt

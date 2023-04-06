@@ -1,0 +1,40 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-yaml
+      - id: trailing-whitespace
+      - id: check-added-large-files
+      - id: check-symlinks
+      - id: check-docstring-first
+      - id: end-of-file-fixer
+      - id: debug-statements
+
+  - repo: https://github.com/psf/black
+    rev: 21.8b0
+    hooks:
+      - id: black
+        name: Black code formatting
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.910
+    hooks:
+      - id: mypy
+        name: Static type checking
+        args: [--install-types, --non-interactive, --ignore-missing-imports]
+
+  - repo: local
+    hooks:
+    - id: pylint
+      name: pylint
+      files: ".py$"
+      language: system
+      entry: pylint -j4 --max-line-length=140
+      pass_filenames: true
+
+    - id: unit-tests
+      name: Unit tests
+      language: system
+      files: ".py$"
+      entry: python3 -m unittest discover tests
+      pass_filenames: false

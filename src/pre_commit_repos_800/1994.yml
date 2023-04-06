@@ -1,0 +1,32 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+
+  - repo: local
+    hooks:
+      - id: terraform_fmt
+        name: Terraform fmt
+        description: Rewrites all Terraform configuration files to a canonical format.
+        entry: make fmt
+        language: system
+        pass_filenames: false
+        types: [terraform]
+
+      - id: terraform_tfsec
+        name: Terraform validate with tfsec
+        description: Static analysis of Terraform templates to spot potential security issues.
+        entry: make sec-scan
+        language: system
+        pass_filenames: false
+        types: [terraform]
+
+      - id: terraform_validate
+        name: Terraform validate
+        description: Validates all Terraform configuration files.
+        entry: make validate
+        language: system
+        pass_filenames: false
+        types: [terraform]

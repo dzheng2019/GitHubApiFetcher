@@ -1,0 +1,44 @@
+# Install pre-commit hooks via
+# pre-commit install
+
+exclude: >
+    (?x)^(
+      \.vscode/settings\.json|
+    )$
+
+repos:
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+    - id: check-json
+    - id: check-yaml
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+
+  - repo: https://github.com/psf/black
+    rev: 22.8.0
+    hooks:
+    - id: black
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 5.0.4
+    hooks:
+    - id: flake8
+
+  - repo: https://github.com/mgedmin/check-manifest
+    rev: "0.39"
+    hooks:
+    - id: check-manifest
+
+  - repo: https://github.com/executablebooks/web-compile
+    rev: v0.2.3
+    hooks:
+      - id: web-compile
+        files: >-
+            (?x)^(
+                web-compile-config.yml|
+                src/.*|
+                quantecon_book_theme/static/.*|
+                quantecon_book_theme/theme.conf
+            )$

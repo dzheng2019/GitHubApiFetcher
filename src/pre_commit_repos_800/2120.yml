@@ -1,0 +1,44 @@
+repos:
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v2.31.1
+    hooks:
+    - id: pyupgrade
+  - repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - args:
+          - --profile
+          - black
+        id: isort
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.2
+    hooks:
+      - args:
+          - --max-line-length=88
+          - --per-file-ignores=__init__.py:F401
+          - --per-file-ignores=**/proto/*:E501
+        id: flake8
+        exclude: |
+          (?x)(
+          ^alembic/
+          )
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-ast
+      - id: check-json
+      - id: check-yaml
+      - id: detect-private-key
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v2.21.2
+    hooks:
+      - id: commitizen
+        stages:
+          - commit-msg

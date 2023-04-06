@@ -1,0 +1,25 @@
+repos: #The order matters, we want prospector to run after all the sorting was done
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      # All checks
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-json
+        # JSON that are not json
+        # (?x) means verbose (we can add spaces for better readibility, but they are ignored)
+        exclude: (?x) ^(tsconfig(\.\w+)? | \.vscode/.*) \.json$
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+      - id: detect-aws-credentials
+      - id: detect-private-key
+      # File normalization
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/prettier/prettier
+    rev: '6b22977cb56127cc10e04425b0eca7c5eb304e6e' # Use the sha or tag you want to point at
+    hooks:
+      - id: prettier

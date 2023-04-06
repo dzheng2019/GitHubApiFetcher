@@ -1,0 +1,32 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-added-large-files
+    -   id: requirements-txt-fixer
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+        args: [--allow-multiple-documents]
+    -   id: check-xml
+    -   id: check-toml
+-   repo: https://gitlab.com/bmares/check-json5
+    rev: v1.0.0
+    hooks:
+    - id: check-json5
+-   repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+    - id: isort
+      name: Sorting Python imports with isort
+-   repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+    - id: black
+      name: Formatting code
+      language_version: python3.10
+-   repo: https://github.com/PyCQA/flake8
+    rev: 4.0.1
+    hooks:
+    - id: flake8
+      name: Linting with flake8

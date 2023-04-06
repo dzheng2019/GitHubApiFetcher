@@ -1,0 +1,27 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.5.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        name: Trailing Whitespace
+      - id: check-added-large-files
+        name: Large Files
+        args: ['--maxkb=40000']
+      - id: check-toml
+        name: TOML File
+      - id: detect-private-key
+        name: Detect Private keys in files
+      - id: name-tests-test
+        name: Test Files correctly named
+  - repo: https://github.com/timothycrosley/isort
+    rev: 4.3.21
+    hooks:
+      - id: isort
+        args: ['--multi-line=3', '--trailing-comma', '--force-grid-wrap=0', '--use-parentheses', '--line-width=88']
+  - repo: https://github.com/psf/black
+    rev: 19.10b0
+    hooks:
+      - id: black
+        name: Black

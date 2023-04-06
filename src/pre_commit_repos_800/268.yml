@@ -1,0 +1,26 @@
+repos:
+  # TODO: Figure out if there's a better pre-commit for conventional commits since this requires node.js
+  - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+    rev: v5.0.0
+    hooks:
+      - id: commitlint
+        language_version: system
+        stages: [commit-msg]
+        additional_dependencies: ["@commitlint/config-conventional"]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0 # Use the ref you want to point at
+    hooks:
+      - id: check-json
+      - id: check-yaml
+      - id: pretty-format-json
+        args:
+          - --autofix
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: local
+    hooks:
+      - id: yaml-extension
+        name: "Ensure yaml files use .yaml"
+        entry: ./hooks/yaml/yaml-extension.sh
+        language: script
+        files: \.yml$

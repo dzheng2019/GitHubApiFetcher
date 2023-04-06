@@ -1,0 +1,39 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-added-large-files
+      # - id: check-executables-have-shebangs
+      - id: check-yaml
+        exclude: mkdocs.yml
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: master
+    hooks:
+      - id: prettier
+
+  - repo: https://gitlab.com/donaldrich/function-as-a-container
+    rev: bc32bfad84473d461d81c500f624e6d3aa4ec6ab
+    hooks:
+      - id: secrets-detect-secrets
+        stages: [commit]
+      - id: secrets-gitleaks
+        stages: [commit]
+        args: ["--verbose"]
+      - id: terraform-fmt
+        stages: [commit]
+      - id: terraform-tfsec
+        stages: [commit]
+      # - id: terraform-tflint
+      #   stages: [commit]
+      #   verbose: true
+      #   args: ["--loglevel=debug"]
+      # - id: terragrunt-hclfmt
+      #   stages: [commit]
+
+  # - repo: local
+  #   hooks:

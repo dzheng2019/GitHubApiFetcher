@@ -1,0 +1,39 @@
+---
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      # Filesystem
+      - id: check-case-conflict
+      - id: check-symlinks
+      # Whitespace
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      # Syntax
+      - id: check-merge-conflict
+      - id: check-executables-have-shebangs
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+  - repo: https://github.com/JohnnyMorganz/StyLua
+    rev: v0.17.0
+    hooks:
+      - id: stylua-github
+  - repo: local
+    hooks:
+      - id: shfmt
+        name: shfmt
+        language: golang
+        additional_dependencies: [mvdan.cc/sh/v3/cmd/shfmt@v3.5.1]
+        entry: shfmt
+        args:
+          # indent
+          - -i=2
+          # simplify the code
+          - -s
+          # write result to file instead of stdout
+          - -w
+        types:
+          - shell

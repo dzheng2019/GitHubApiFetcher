@@ -1,0 +1,28 @@
+default_stages: [commit,push]
+repos:
+-   repo: local
+    hooks:
+
+        -   id: no-commit-to-branch
+            name: no-commit-to-branch
+            description: Forbids committing to the main branch.
+            entry: poetry run no-commit-to-branch
+            pass_filenames: false
+            always_run: true
+            args:
+               - --branch=main
+            language: system
+
+        -   id: run-unit-tests
+            name: run-unit-tests
+            description: Runs unit and integration tests
+            entry: make test-unit
+            language: system
+            pass_filenames: false
+
+        -   id: run-checks
+            name: run-checks
+            entry: make check-all
+            description: Checks linting, formatting, typing, etc.
+            language: system
+            pass_filenames: false

@@ -1,0 +1,30 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: ^tests/.*/fixtures/.*
+      - id: end-of-file-fixer
+        exclude: ^tests/.*/fixtures/.*
+      - id: debug-statements
+      - id: detect-private-key
+      - id: check-added-large-files
+        exclude: ^tests/repositories/pypi/.*-data/.*.json$
+      - id: check-toml
+      - id: check-json
+        exclude: ^tests/repositories/pypi/.*-data/.*.json$
+      - id: check-yaml
+      - id: check-ast
+  - repo: local
+    hooks:
+      #- id: safety
+      #  name: safety
+      #  entry: "poetry export | poetry run safety check --stdin"
+      #  language: system
+      #  types: [python]
+
+      - id: lint
+        name: lint
+        entry: poetry run flake8
+        language: system
+        types: [python]

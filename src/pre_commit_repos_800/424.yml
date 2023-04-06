@@ -1,0 +1,39 @@
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        language: system
+        entry: black
+        minimum_pre_commit_version: 2.9.2
+        require_serial: true
+        types_or: [python, pyi]
+
+      - id: flake8
+        name: flake8
+        language: python
+        entry: flake8
+        additional_dependencies:
+          - flake8-bugbear
+          - flake8-comprehensions
+          - flake8-simplify
+        types: [python]
+
+      - id: isort
+        name: isort (python)
+        language: python
+        entry: isort
+        pass_filenames: false
+        types: [python]
+
+      - id: mypy
+        name: mypy
+        language: python
+        entry: mypy
+        types: [python]
+
+      - id: pylint
+        name: pylint
+        language: python
+        entry: pylint
+        types: [python]

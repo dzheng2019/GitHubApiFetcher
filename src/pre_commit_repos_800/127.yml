@@ -1,0 +1,31 @@
+repos:
+  - repo: local
+    hooks:
+      - id: fmt
+        name: cargo fmt
+        description: Format with rustfmt
+        entry: cargo fmt --
+        language: system
+        files: \.rs$
+        args: []
+      - id: cargo-check
+        name: cargo check
+        description: Check the crate for errors
+        entry: cargo check
+        language: system
+        files: \.rs$
+        pass_filenames: false
+      - id: cargo-clippy
+        name: cargo clippy
+        description: Run clippy linter
+        entry: cargo clippy -- -D warnings
+        language: system
+        files: \.rs$
+        pass_filenames: false
+      - id: cargo-udeps
+        name: cargo udeps
+        description: Check for unused deps
+        entry: cargo +nightly udeps
+        language: system
+        files: \.rs$
+        pass_filenames: false

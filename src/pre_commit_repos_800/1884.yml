@@ -1,0 +1,40 @@
+fail_fast: false
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: check-toml
+    -   id: check-byte-order-marker
+    -   id: check-ast
+    -   id: check-added-large-files
+-   repo: local
+    hooks:
+    -   id: black
+        name: Black Formatter
+        language_version: python3.8
+        types:
+            - python
+        entry: black
+        language: python
+-   repo: local
+    hooks:
+    -   id: isort
+        name: isort Python Imports
+        args: ["--profile", "black", "--filter-files"]
+        language_version: python3.8
+        types:
+            - python
+        entry: isort
+        language: python
+-   repo: local
+    hooks:
+      - id: vulture
+        name: Vulture Code Analyzer
+        language_version: python3.8
+        types:
+            - python
+        entry: vulture
+        language: python

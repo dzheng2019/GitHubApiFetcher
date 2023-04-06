@@ -1,0 +1,39 @@
+exclude: (migrations/)
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        entry: isort
+        types: [python]
+        language: system
+      - id: black
+        name: black
+        entry: black
+        language: system
+        types: [python]
+        args:
+          [
+            "--preview",
+          ]
+      - id: flake8
+        name: flake8
+        entry: flake8
+        types: [python]
+        language: system
+      - id: eslint
+        name: eslint
+        entry: npx eslint
+        language: system
+        types_or: [javascript, jsx, ts, tsx]
+        args:
+          [
+            "--fix",
+            "django_staticfiles_vite/**/*.{js,ts,jsx,tsx}",
+            "**/*.{js,ts,jsx,tsx}",
+          ]

@@ -1,0 +1,40 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+
+-   repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+    -   id: black
+
+- repo: https://github.com/PyCQA/isort
+  rev: 5.8.0
+  hooks:
+    - id: isort
+
+- repo: https://github.com/PyCQA/flake8
+  rev: 5.0.4
+  hooks:
+    - id: flake8
+      args: ["--config=setup.cfg"]
+
+- repo: local
+  hooks:
+    - id: migrations-check
+      language: system
+      name: Check for uncreated migrations.
+      entry: sh -c "./manage.py makemigrations --check --dry-run"
+      files: "models\\.py$"
+      stages: [commit]
+
+- repo: local
+  hooks:
+    - id: build-requirements-txt
+      language: system
+      name: Build requirements.txt from pyproject.toml
+      entry: sh ./utils/build_requirements_txt.sh
+      stages: [commit]

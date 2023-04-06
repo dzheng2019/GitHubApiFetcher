@@ -1,0 +1,29 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-added-large-files
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+  - repo:  https://github.com/codespell-project/codespell
+    rev: v2.1.0
+    hooks:
+      - id: codespell
+        args: [--skip, "*.ttl"]
+  - repo: local
+    hooks:
+      - id: update-requirements-txt
+        name: update-requirements-txt
+        description: 'Generate requirements.txt based on poetry.lock'
+        entry: poetry
+        args: [export, --format, requirements.txt, --output, requirements.txt, --without-hashes]
+        language: system
+        pass_filenames: false

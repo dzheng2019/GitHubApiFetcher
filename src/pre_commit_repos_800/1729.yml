@@ -1,0 +1,45 @@
+# See https://pre-commit.com/ for usage and config
+repos:
+- repo: local
+  hooks:
+  - id: isort
+    name: isort
+    stages: [commit]
+    language: system
+    entry: poetry run isort
+    types: [python]
+
+  - id: black
+    name: black
+    stages: [commit]
+    language: system
+    entry: poetry run black
+    types: [python]
+
+  - id: flake8
+    name: flake8
+    stages: [commit]
+    language: system
+    entry: poetry run flake8
+    types: [python]
+    exclude: setup.py
+
+  - id: mypy
+    name: mypy
+    stages: [commit]
+    language: system
+    entry: poetry run mypy
+    types: [python]
+    require_serial: true
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+-   repo: https://github.com/pre-commit/mirrors-prettier
+    rev: 'v2.2.1'
+    hooks:
+    -   id: prettier
+        types: [python, yaml]

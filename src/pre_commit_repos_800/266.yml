@@ -1,0 +1,38 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+  - id: check-json
+  - id: check-yaml
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+- repo: https://github.com/JohnnyMorganz/StyLua
+  rev: v0.12.4
+  hooks:
+  - id: stylua-system
+- repo: local
+  hooks:
+  - id: rockspec-lint
+    name: lint rockspecs
+    entry: luarocks lint
+    language: system
+    files: '\.rockspec$'
+  - id: rockspec-stylua
+    name: format rockspecs
+    entry: stylua
+    language: system
+    files: '\.rockspec$'
+  - id: luacheck
+    name: luacheck
+    entry: luacheck
+    language: system
+    types: [lua]
+  - id: build
+    name: build
+    entry: luarocks build --no-install
+    language: system
+    pass_filenames: false
+- repo: meta
+  hooks:
+  - id: check-hooks-apply
+  - id: check-useless-excludes

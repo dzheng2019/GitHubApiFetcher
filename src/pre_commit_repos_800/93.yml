@@ -1,0 +1,31 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    - id: check-added-large-files
+    - id: check-toml
+    - id: check-yaml
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.11.4
+    hooks:
+    - id: isort
+      additional_dependencies: [toml]
+      args: [stacksample, tests, backend/app]
+  - repo: https://github.com/psf/black
+    rev: 22.12.0
+    hooks:
+    - id: black
+      language_version: python3
+      args: [--line-length=100]
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.991
+    hooks:
+    - id: mypy
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.0.0
+    hooks:
+    - id: flake8
+      additional_dependencies: [flake8-print]
+      args: [--max-line-length=100, "--ignore=E203,E231,E501,W503"]

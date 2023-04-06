@@ -1,0 +1,37 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+-   repo: local
+    hooks:
+    -   id: pydocstyle
+        name: Check docstrings
+        stages: [commit]
+        language: system
+        entry: poetry run pydocstyle dotmatrix
+        types: [python]
+        pass_filenames: false
+    -   id: mypy
+        name: Typecheck python code
+        stages: [commit]
+        language: system
+        entry: poetry run mypy
+        types: [python]
+    -   id: isort
+        name: Sort python imports
+        stages: [commit]
+        language: system
+        entry: poetry run isort --profile black
+        types: [python]
+    -   id: black
+        name: Format python code
+        stages: [commit]
+        language: system
+        entry: poetry run black
+        types: [python]

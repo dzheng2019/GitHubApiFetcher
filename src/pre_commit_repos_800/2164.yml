@@ -1,0 +1,44 @@
+fail_fast: true
+repos:
+    - repo: local
+      hooks:
+        # formatting
+        - id: black
+          name: Formatting Check
+          entry: black
+          language: system
+          types: [file, python]
+          args:
+            - --check
+            - --line-length=100
+            - .
+          pass_filenames: false
+          stages:
+            - commit
+        - id: flake8
+          name: Linting Check
+          entry: pflake8
+          language: system
+          types: [file, python]
+          pass_filenames: false
+          stages:
+            - commit
+        - id: isort
+          name: Import Sorting Check
+          entry: isort
+          language: system
+          types: [file, python]
+          args:
+            - --check
+            - --py=310
+            - .
+          pass_filenames: false
+          stages:
+            - commit
+        - id: pyright
+          name: Typing Check
+          language: system
+          entry: pyright
+          pass_filenames: false
+          stages:
+            - push

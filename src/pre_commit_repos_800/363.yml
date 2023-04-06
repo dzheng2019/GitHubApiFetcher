@@ -1,0 +1,29 @@
+repos:
+-   repo: https://github.com/ambv/black
+    rev: stable
+    hooks: # Code formatter
+    - id: black
+      language_version: python3.8
+      stages: [commit]
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.7.9
+    hooks: # Code Style
+    - id: flake8
+      stages: [commit]
+-   repo: local
+    hooks: # Automated Tests
+    - id: pytest
+      name: pytest
+      language: system
+      entry: bash -c 'venv/bin/pytest -v -s; git add crud-python.db'
+      always_run: true
+      pass_filenames: false
+      stages: [commit]
+-   repo: local
+    hooks: # Add all requiments in requirements.txt file
+      - id: requirements
+        name: requirements
+        entry: bash -c 'venv/bin/pip3 freeze > requirements.txt; git add requirements.txt'
+        language: system
+        pass_filenames: false
+        stages: [commit]

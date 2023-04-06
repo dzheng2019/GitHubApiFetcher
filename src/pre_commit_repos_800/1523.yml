@@ -1,0 +1,31 @@
+---
+fail_fast: true
+default_stages: [commit]
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: detect-private-key
+      - id: check-executables-have-shebangs
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+        description: Forces to replace line ending by the UNIX 'lf' character.
+  - repo: local
+    hooks:
+      - id: system
+        name: yamllint
+        entry: poetry run yamllint .
+        pass_filenames: false
+        always_run: true
+        language: system
+  - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+    rev: v2.2.0
+    hooks:
+      - id: commitlint
+        stages: [commit-msg]
+        additional_dependencies: ['@commitlint/config-conventional']

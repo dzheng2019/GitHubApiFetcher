@@ -1,0 +1,27 @@
+---
+exclude: ^inventories/(vc01.vmware|foreman).yml
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: detect-aws-credentials
+        args: ['--allow-missing-credentials']
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.26.1
+    hooks:
+      - id: yamllint
+        args: ['-d {extends: default, rules: {line-length: disable}}', '-s']
+  - repo: https://github.com/ansible/ansible-lint.git
+    rev: v5.0.11
+    hooks:
+      - id: ansible-lint
+      # verbose: true

@@ -1,0 +1,35 @@
+repos:
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: no-commit-to-branch
+        args: [--branch, develop, --branch, main]
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-yaml
+      - id: detect-aws-credentials
+      - id: detect-private-key
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v2.18.0
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
+  - repo: https://github.com/asottile/reorder_python_imports
+    rev: v2.6.0
+    hooks:
+      - id: reorder-python-imports
+  - repo: https://github.com/python/black
+    rev: 21.8b0
+    hooks:
+      - id: black
+        name: Run Black
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.0
+    hooks:
+      - id: bandit
+        name: Run Bandit
+        args: [-ll]
+        language_version: python3

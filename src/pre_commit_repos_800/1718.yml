@@ -1,0 +1,39 @@
+default_language_version:
+    python: python3.8
+default_stages: [commit, push]
+minimum_pre_commit_version: 2.10.1
+exclude: '.*/migrations/.*'
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+    -   id: check-added-large-files
+    -   id: check-ast
+    -   id: check-docstring-first
+    -   id: check-merge-conflict
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+
+-   repo: local
+    hooks:
+    -   id: mypy
+        name: Run mypy
+        entry: python3 -m mypy
+        language: system
+        types: [python]
+        stages: [push, commit]
+
+    -   id: autoflake
+        name: Run autoflake
+        description: Removes unused imports from python scripts
+        entry: autoflake
+        language: system
+        types: [python]
+        args: [--in-place, --remove-all-unused-imports]
+
+    -   id: flake8
+        name: Run flake8
+        entry: python3 -m flake8
+        language: system
+        types: [python]

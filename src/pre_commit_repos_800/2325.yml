@@ -1,0 +1,30 @@
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    sha: cf550fcab3f12015f8676b8278b30e1a5bc10e70
+    hooks:
+    -   id: check-added-large-files
+    -   id: check-case-conflict
+    -   id: check-json
+    -   id: check-merge-conflict
+    -   id: check-yaml
+    -   id: debug-statements
+    -   id: trailing-whitespace
+    -   id: flake8
+        exclude: "\
+            (.*migrations.*)|\
+            (configs/vagrant/settings_local.py)|\
+            (docs/.*)|\
+            (kitsune/settings.*)|\
+            (kitsune/sumo/db_strings.py)|\
+            (scripts/contributor_counts.py)|\
+            (scripts/crontab/gen-crons.py)|\
+            (scripts/peep.py)|\
+            (scripts/sprint_report.py)|\
+            (scripts/year_in_review.py)"
+        args: [--max-line-length=99]
+-   repo: git://github.com/pre-commit/mirrors-eslint
+    sha: '4c6f4aba847a057b7aa1f36838743e460d3e4573'
+    hooks:
+    -   id: eslint
+        exclude: "\
+            (kitsune/sumo/static/sumo/js/libs/.*)|\
+            (scripts/lockdown.js)"

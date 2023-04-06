@@ -1,0 +1,33 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+-   repo: https://github.com/pycqa/isort
+    rev: 5.7.0
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]
+-   repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.7.1.1
+    hooks:
+        - id: shellcheck
+          args:
+              - --external-sources
+-   repo: https://github.com/psf/black
+    rev: 21.12b0
+    hooks:
+        - id: black
+-   repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint --reports=no --rcfile=.pylintrc --disable=C
+        types: [ python ]
+        language: system
+      - id: bump-version
+        name: bump-horizons-api-version
+        entry: ./check_version.sh
+        language: script

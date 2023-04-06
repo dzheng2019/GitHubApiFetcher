@@ -1,0 +1,42 @@
+default_stages: [commit]
+
+repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.256
+    hooks:
+      - id: ruff
+
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        language: python
+        additional_dependencies:
+          - venv-run==0.2.0
+        entry: venv-run mypy .
+        types: [python]
+        pass_filenames: false
+        require_serial: true
+
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.13.10
+    hooks:
+      - id: typos
+        # TODO: to .typos.toml, https://github.com/crate-ci/typos/issues/347
+        exclude: ^tests/cassettes/
+
+  - repo: https://github.com/jorisroovers/gitlint
+    rev: v0.19.1
+    hooks:
+      - id: gitlint
+
+  - repo: https://github.com/jackdewinter/pymarkdown
+    rev: v0.9.8
+    hooks:
+      - id: pymarkdown
+        exclude: ^CHANGELOG\.md$

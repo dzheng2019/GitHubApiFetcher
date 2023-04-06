@@ -1,0 +1,27 @@
+repos:
+      - repo: https://github.com/pycqa/isort
+        rev: 5.12.0
+        hooks:
+              - id: isort
+                args: ["--settings-path=pyproject.toml"]
+                exclude: __init__.py$
+                types: [text]
+                types_or: [python, cython, pyi]
+      - repo: https://github.com/ambv/black
+        rev: 22.3.0
+        hooks:
+              - id: black
+      - repo: https://github.com/pycqa/flake8
+        rev: 3.8.3
+        hooks:
+              - id: flake8
+      - repo: https://github.com/pycqa/flake8
+        rev: 3.8.3
+        hooks:
+              - id: flake8
+                alias: flake8-cython
+                name: flake8-cython
+                args: ["--config=.flake8.cython"]
+                types: [cython]
+default_language_version:
+      python: python3

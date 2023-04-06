@@ -1,0 +1,33 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: \.output
+      - id: end-of-file-fixer
+        exclude: \.(cp?p?$|output)
+      - id: check-docstring-first
+      - id: check-added-large-files
+      - id: check-yaml
+      - id: debug-statements
+      - id: requirements-txt-fixer
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v2.37.3
+    hooks:
+      - id: pyupgrade
+  - repo: https://github.com/pycqa/flake8
+    rev: '5.0.4'
+    hooks:
+      - id: flake8
+        args: [--max-line-length=120]
+  # - repo: local
+  #   hooks:
+  #     - id: pytest
+  #       name: tests
+  #       entry: pytest
+  #       description: Run all tests
+  #       language: python
+  #       exclude: "^(docs/|setup.py$)"
+  #       types: [python]
+  #       additional_dependencies: [".", "pytest"]
+  #       args: ["-vv", "tests"]
